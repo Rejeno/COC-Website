@@ -34,7 +34,7 @@ export default function RootLayout({
 
               {/* Main navigation */}
               <nav className="hidden md:flex items-center gap-10">
-                <a href="/" className="text-base hover:text-[#6D7E5E] transition-colors">
+                <a href="/landing" className="text-base hover:text-[#6D7E5E] transition-colors">
                   Home
                 </a>
                 <a
