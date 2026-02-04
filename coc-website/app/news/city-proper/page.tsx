@@ -117,7 +117,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
       {/* Separator line – underlines the author section */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
-        <div className="max-w-[860px] lg:max-w-[820px] xl:max-w-[860px] border-b border-black" />
+        <div className="max-w-[860px] lg:max-w-[820px] xl:max-w-[750px] border-b border-black" />
       </div>
 
       {/* Main article content + sidebar */}
