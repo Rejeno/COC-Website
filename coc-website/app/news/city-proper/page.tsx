@@ -1,0 +1,174 @@
+// app/news/city-proper/page.tsx
+// Duplicate & rename for other districts (jaro, lapaz, mandurriao, etc.)
+
+import { ArrowLeft, Calendar, Clock, Facebook } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function ArticlePage() {
+  const article = {
+    title: 'This should contain the title of the article. It could be two lines or so..',
+    heroImage: '/hero-images/image.png',
+    author: 'Mark Andrei Encanto',
+    role: 'Article Author',
+    avatar: '/avatar-images/mark.jpg',
+    date: 'December 25, 2026',
+    readTime: '3 mins read',
+    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
+  };
+
+  const paragraphs = article.content.split('\n\n').filter(Boolean);
+
+  return (
+    <article className="min-h-screen bg-white">
+      {/* Back button */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] pt-6 lg:pt-10">
+        <Link
+          href="/news"
+          className="inline-flex items-center gap-3 rounded-[13px] bg-brand-green px-6 py-3 text-sm font-bold text-white transition hover:bg-opacity-90"
+        >
+          <ArrowLeft size={18} />
+          Back to news
+        </Link>
+      </div>
+
+      {/* Hero image */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
+        <div className="overflow-hidden rounded-[38px]">
+          <Image
+            src={article.heroImage}
+            alt={article.title}
+            width={1339}
+            height={497}
+            className="w-full h-auto object-cover"
+            priority
+          />
+        </div>
+      </div>
+
+      {/* Title + Follow CTA */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-12 lg:mt-16">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-0">
+          <div className="max-w-[920px] lg:max-w-[780px] xl:max-w-[880px]">
+            <h1 className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight lg:leading-[78px] text-brand-brown">
+              {article.title}
+            </h1>
+          </div>
+
+          <div className="flex flex-col items-end gap-3 lg:items-end">
+            <p className="text-xl font-semibold text-brand-gray">
+              Follow our Facebook Page
+            </p>
+            <div className="flex justify-center w-full">
+              <button
+                aria-label="Follow us on Facebook"
+                className="flex h-11 w-11 items-center justify-center rounded-[13px] bg-brand-green text-white hover:bg-opacity-90 transition-colors"
+              >
+                <Facebook size={22} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Author + Date/Read time */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-10 lg:mt-12">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
+          <div className="flex items-start gap-5">
+            <div className="h-[76px] w-[76px] rounded-full overflow-hidden flex-shrink-0">
+              <Image
+                src={article.avatar}
+                alt={article.author}
+                width={76}
+                height={76}
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="flex flex-col">
+              <p className="text-xl text-brand-light-gray">{article.author}</p>
+              <p className="text-2xl font-semibold text-brand-dark">{article.role}</p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap justify-end lg:justify-end items-end gap-x-8 gap-y-3 text-brand-dark text-base lg:self-end">
+            <div className="flex items-center gap-2">
+              <Calendar size={20} />
+              <span>{article.date}</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Clock size={20} />
+              <span>{article.readTime}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Black line – full body width, slightly shorter, with gap */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
+        <div className="max-w-[860px] lg:max-w-[820px] xl:max-w-[750px] border-b border-black" />
+      </div>
+
+      {/* Main content + sidebar */}
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-12 lg:mt-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,920px)_minmax(0,340px)] xl:grid-cols-[minmax(0,980px)_minmax(0,320px)] gap-12 lg:gap-16 xl:gap-20">
+          <div className="max-w-none">
+            {paragraphs.map((para, i) => (
+              <p
+                key={i}
+                className="mb-7 text-base leading-[20px] text-justify tracking-[0.01em] text-black last:mb-0"
+              >
+                {para.trim()}
+              </p>
+            ))}
+          </div>
+
+          <aside className="lg:sticky lg:top-24 lg:self-start">
+            <div className="rounded-md bg-accent-brown py-3.5 text-center text-base font-semibold text-white">
+              MORE ARTICLES HERE
+            </div>
+
+            <div className="mt-8 space-y-8">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div key={i} className="group">
+                  <h3 className="font-semibold text-base leading-[20px] tracking-[0.01em] text-black group-hover:text-brand-green line-clamp-2">
+                    News article here can be like anything like this..
+                  </h3>
+                  <p className="mt-2 text-base leading-[20px] tracking-[0.01em] text-brand-gray line-clamp-2">
+                    First few descriptions here para lang makita omg...
+                  </p>
+                  <p className="mt-3 text-xs leading-[15px] tracking-[0.01em] text-brand-light-gray">
+                    18 hrs ago | Local News
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/30" />
+                </div>
+              ))}
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      {/* Footer social icons */}
+      <footer className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-24 pb-12 lg:pb-20">
+        <div className="flex gap-5">
+          {['Facebook', 'Instagram', 'X', 'Threads'].map((platform) => (
+            <a
+              key={platform}
+              href="#"
+              className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
+              aria-label={`Follow on ${platform}`}
+            >
+              {platform[0]}
+            </a>
+          ))}
+        </div>
+      </footer>
+    </article>
+  );
+}
