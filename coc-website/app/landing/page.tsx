@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { montserrat } from '../../lib/font';
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -108,7 +109,83 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="pb-20"></div>
+            {/* --- INTRODUCTION SECTION --- */}
+            <div className="w-full bg-white pt-40 pb-20 flex justify-center">
+
+                <div className="w-full max-w-300px px-4 grid grid-cols-1 md:grid-cols-12 gap-12">
+
+                    {/* --- Left Column: Content --- */}
+                    <div className="md:col-span-8 flex flex-col gap-8">
+                        <h2 className={`${montserrat.className} text-6xl font-bold text-brand-brown pl-7`}>
+                            Introduction
+                        </h2>
+
+                        <div className={`${montserrat.className} space-y-10 text-xl text-black font-normal leading-relaxed px-10`}>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
+                                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
+                                uidem, fugit nostrum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
+                                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
+                                uidem, fugit nostrum.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+                                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
+                                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
+                                uidem, fugit nostrum.</p>
+                        </div>
+                    </div>
+
+                    {/* --- Right Column: Directory Sidebar --- */}
+                    <div className="col-span-4 flex flex-col gap-6 pl-10 pt-8">
+
+                        <h3 className={`${montserrat.className} text-brand-brown font-semibold text-lg uppercase tracking-wide`}>
+                            Iloilo City Districts Directory
+                        </h3>
+
+                        <ul className={`${montserrat.className} space-y-3 text-[#737373] font-normal text-lg`}>
+                            {[
+                                { name: "District of City Proper", slug: "city-proper" },
+                                { name: "District of Jaro", slug: "jaro" },
+                                { name: "District of La Paz", slug: "la-paz" },
+                                { name: "District of Lapuz", slug: "lapuz" },
+                                { name: "District of Mandurriao", slug: "mandurriao" },
+                                { name: "District of Molo", slug: "molo" },
+                                { name: "District of Villa", slug: "villa" },
+                            ].map((district) => (
+                                <li key={district.slug} className="hover:text-[#5B4332] cursor-pointer transition-colors">
+                                    <Link href={`/districts/${district.slug}`}>
+                                        {district.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                        {/* Divider */}
+                        <div className="w-85 h-0.5 bg-[#989797] my-2"></div>
+
+                        {/* Facebook Link */}
+                        <a href="#" className={`${montserrat.className} flex items-center gap-3 text-[#737373] hover:text-[#5B4332] transition-colors group`}>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.5"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className="group-hover:stroke-[#5B4332]"
+                            >
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                            <span className="font-light text-lg">Follow us on Facebook</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
         </section>
     );
 }
