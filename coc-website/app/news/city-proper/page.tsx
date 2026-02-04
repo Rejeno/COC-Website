@@ -142,7 +142,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
             </div>
 
             <div className="mt-8 space-y-8">
-              {Array.from({ length: 6 }).map((_, i) => (
+              {Array.from({ length: 3 }).map((_, i) => (
                 <div key={i} className="group">
                   <h3 className="font-semibold text-base leading-[20px] tracking-[0.01em] text-black group-hover:text-brand-green line-clamp-2">
                     News article here can be like anything like this..
