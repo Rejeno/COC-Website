@@ -1,7 +1,6 @@
 // app/news/city-proper/page.tsx
 // Duplicate this file and rename the folder for other districts (e.g. jaro, lapaz, mandurriao, etc.)
 
-import { ArrowLeft, Calendar, Clock, Facebook } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -34,7 +33,19 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
           href="/news"
           className="inline-flex items-center gap-3 rounded-[13px] bg-brand-green px-6 py-3 text-sm font-bold text-white transition hover:bg-opacity-90"
         >
-          <ArrowLeft size={18} />
+          <svg
+            className="h-[18px] w-[18px]"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="m12 19-7-7 7-7" />
+            <path d="M19 12H5" />
+          </svg>
           Back to news
         </Link>
       </div>
@@ -73,7 +84,18 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 aria-label="Follow us on Facebook"
                 className="flex h-11 w-11 items-center justify-center rounded-[13px] bg-brand-green text-white hover:bg-opacity-90 transition-colors"
               >
-                <Facebook size={22} />
+                <svg
+                  className="h-[22px] w-[22px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
               </button>
             </div>
           </div>
@@ -104,11 +126,43 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
           {/* Date and read time – right-aligned */}
           <div className="flex flex-wrap justify-end lg:justify-end items-end gap-x-8 gap-y-3 text-brand-dark text-base lg:self-end">
             <div className="flex items-center gap-2">
-              <Calendar size={20} />
+              <svg
+                className="h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+                <path d="M8 14h.01" />
+                <path d="M12 14h.01" />
+                <path d="M16 14h.01" />
+                <path d="M8 18h.01" />
+                <path d="M12 18h.01" />
+                <path d="M16 18h.01" />
+              </svg>
               <span>{article.date}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock size={20} />
+              <svg
+                className="h-5 w-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <circle cx="12" cy="13" r="8" />
+                <path d="M12 6v6l4 2" />
+              </svg>
               <span>{article.readTime}</span>
             </div>
           </div>
@@ -161,19 +215,87 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </div>
       </div>
 
-      {/* Footer – social media links */}
+      {/* Footer – social media links with inline SVG */}
       <footer className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-24 pb-12 lg:pb-20">
         <div className="flex gap-5">
-          {['Facebook', 'Instagram', 'X', 'Threads'].map((platform) => (
-            <a
-              key={platform}
-              href="#"
-              className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
-              aria-label={`Follow on ${platform}`}
+          <a
+            href="#"
+            className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
+            aria-label="Follow on Facebook"
+          >
+            <svg
+              className="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
-              {platform[0]}
-            </a>
-          ))}
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
+            aria-label="Follow on Instagram"
+          >
+            <svg
+              className="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
+            aria-label="Follow on X"
+          >
+            <svg
+              className="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+
+          <a
+            href="#"
+            className="flex h-[39px] w-[39px] items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-90"
+            aria-label="Follow on Threads"
+          >
+            <svg
+              className="h-5 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+              <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" />
+            </svg>
+          </a>
         </div>
       </footer>
     </article>
