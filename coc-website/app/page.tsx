@@ -166,7 +166,7 @@ export default function Hero() {
             </ul>
 
             {/* Divider */}
-            <div className="w-85 h-0.5 bg-[#989797] my-2"></div>
+            <div className="w-85 h-[0.5px] bg-[#989797] my-2"></div>
 
             {/* Facebook Link with inline SVG */}
             <a href="#" className={`${montserrat.className} flex items-center gap-3 text-[#737373] hover:text-[#5B4332] transition-colors group`}>
