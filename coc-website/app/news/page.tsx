@@ -80,6 +80,28 @@ const MOCK_ARTICLES: Article[] = [
     },
 ];
 
+// Mock data for the sidebar (Featured & Districts lists)
+const SIDEBAR_POSTS = [
+    {
+        id: "101",
+        title: "Top Hidden Gems: Top Cafes in Iloilo City Districts.",
+        date: "February 04, 2026",
+        image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=200",
+    },
+    {
+        id: "102",
+        title: "Top Hidden Gems: Top Cafes in Iloilo City Districts.",
+        date: "February 04, 2026",
+        image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80&w=200",
+    },
+    {
+        id: "103",
+        title: "Top Hidden Gems: Top Cafes in Iloilo City Districts.",
+        date: "February 04, 2026",
+        image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=200",
+    },
+];
+
 // --- 2. Components ---
 
 export default function NewsPage() {
@@ -124,9 +146,105 @@ export default function NewsPage() {
                         </button>
                     ))}
                 </div>
+                {/* --- MAIN CONTENT LAYOUT (Grid) --- */}
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
 
+                    {/* LEFT COLUMN: Main Articles Grid (Takes up 3/4 width on large screens) */}
+                    <div className="lg:col-span-3">
+                        <div className="flex items-center gap-4 mb-8">
+                            <h2 className={`${montserrat.className} text-4xl font-semibold text-brand-brown whitespace-nowrap`}>
+                                Coffee runs in our veins
+                            </h2>
+                            <div className="h-[0.5px] bg-brand-light-gray w-full mt-2"></div>
+                        </div>
+
+                        {/* The Article Cards Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {filteredArticles.length > 0 ? (
+                                filteredArticles.map((article) => (
+                                    <ArticleCard key={article.id} article={article} />
+                                ))
+                            ) : (
+                                <div className={`${montserrat.className} col-span-full py-10 text-center text-brand-light-gray`}>
+                                    No articles found for {activeFilter} district.
+                                </div>
+                            )}
+                        </div>
+                    </div>
+
+                    {/* RIGHT COLUMN: Sidebar (Takes up 1/4 width) */}
+                    <aside className="lg:col-span-1 space-y-12">
+
+                        {/* Featured Section */}
+                        <SidebarSection title="Featured" items={SIDEBAR_POSTS} />
+
+                        {/* Districts Section (Reusing the same mock data for visual consistency) */}
+                        <SidebarSection title="Districts" items={SIDEBAR_POSTS} />
+
+                    </aside>
+                </div>
             </main>
         </div>
     );
 }
+// --- 3. Sub-Components for cleanliness ---
 
+// The Main Large Card Component
+function ArticleCard({ article }: { article: Article }) {
+    return (
+        <div className="group relative h-100 w-full rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+            {/* Background Image */}
+            <img
+                src={article.imageUrl}
+                alt={article.title}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+
+            {/* Dark Overlay Gradient */}
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
+
+            {/* Content Overlay */}
+            <div className={`${montserrat.className} absolute bottom-0 left-0 p-6 text-white w-full`}>
+                <div className="flex items-center text-xs tracking-wider mb-2 opacity-80">
+                    <span>Category . {article.category}</span>
+                    <span className="ml-3 mr-1">|</span>
+                    <span>{article.date}</span>
+                </div>
+                <h3 className="text-2xl font-bold leading-tight mb-2">
+                    {article.title}
+                </h3>
+            </div>
+        </div>
+    );
+}
+// Sidebar Section Component
+function SidebarSection({ title, items }: { title: string; items: any[] }) {
+    return (
+        <div>
+            <div className="flex items-center gap-4 mt-2 mb-6">
+                <h3 className={`${montserrat.className} text-xl font-semibold text-accent-brown`}>{title}</h3>
+                <div className="h-[0.5px] bg-brand-light-gray w-full mt-1"></div>
+            </div>
+
+            <div className="flex flex-col gap-6">
+                {items.map((item, index) => (
+                    <div key={`${title}-${index}`} className="flex gap-4 group cursor-pointer">
+                        <div className="w-20 h-20 shrink-0 rounded-2xl overflow-hidden">
+                            <img
+                                src={item.image}
+                                alt=""
+                                className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                            />
+                        </div>
+                        <div className="flex flex-col justify-center">
+                            <span className={`${montserrat.className} text-sm text-[#939393] mb-1`}>{item.date}</span>
+                            <h4 className={`${montserrat.className}text-base font-semibold text-[#585858] leading-snug group-hover:text-[#8B5E3C] transition-colors`}>
+                                {item.title}
+                            </h4>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
