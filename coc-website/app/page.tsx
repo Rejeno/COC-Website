@@ -124,24 +124,17 @@ export default function Hero() {
               Introduction
             </h2>
 
-            <div className={`${montserrat.className} space-y-10 text-xl text-black font-normal leading-relaxed px-10`}>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
-                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
-                uidem, fugit nostrum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
-                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
-                uidem, fugit nostrum.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-                incidunt. Blanditiis, veritatis rem tempora consequatur atque delectus
-                eaque earum repudiandae quidem mollitia unde sequi autem magnam quibusdam. Q
-                uidem, fugit nostrum.</p>
+            <div className={`${montserrat.className} space-y-10 text-base text-black text-justify font-normal leading-relaxed px-10`}>
+              <p>Coffee is life. Some would even agree that it’s enough to bring the deceased back to the world of the living. Though this is quite an awfully excessive way of describing its remarkable potency, one cannot deny its caffeine magic especially in this fast-paced world plagued with school works and professional obligations that constantly comes with looming deadlines. From early morning jeepney rides to late night study sessions, coffee has been more than just a caffeine fix to kick start our day.  It has become a pause, a ritual, a sip of relaxation, or, for others, a form of self-comfort. However, while our coffee cups are often filled with three-in-one mixes or cafe brews, how often do we stop and wonder:<span className="font-semibold italic"> Is coffee just a simple drink in a simple cup? Can it be so much more than that?</span></p>
+              <p>Beyond its warm, toasted aroma and Instagrammable latte art aesthetics, lies a story literally and figuratively rooted in history and its brewing culture along the busy streets and heritage districts of Iloilo. Blending tradition with modern tastes, Iloilo’s coffee scene reflects creativity and the growing appreciation of coffee drinkers and enthusiasts alike, making coffee a familiar companion in the Ilonggo way of life. </p>
+              <p>Iloilo’s coffee history dates back in the post-war era, when its distinct coffee identity took shape through public market venues. One of the oldest coffee shops in Iloilo is the Madge Cafe, established in the 1940s inside La Paz Public Market. Beloved by the Ilonggo Community, then and now, Madge Cafe initiated the coffee-drinking culture in Iloilo for its traditional brews of raw coffee flavors. Another early coffee establishment is Glory’s Cafe, founded in 1948 and took up space in the Iloilo Central Market area, serving traditional brewing of local barako-style coffee.</p>
+              <p>From its early beginnings in public markets, coffee in Iloilo has been closely tied with community life. Traditional kapehan and the later emergence of modern cafes serves not merely as a place for drinking coffee but as social spaces where conversations unfold, ideas circulate, and a shared sense of belonging is cultivated. These spaces introduced premium and speciality coffee, single-origin beans and more refined brewing methods while still honoring traditional preferences for strong, flavorful brews. Many cafes in Iloilo highlighted their use of local beans from various provinces: Calinog, Igbaras, Leon, Maasin, Dingle, Anilao and Banate; blending heritage with innovation. Rather than replacing the traditional way of brewing coffee, modern cafes have reimagined these coffee spaces as sites of creativity, work and leisure for younger coffee enthusiasts and drinkers, while maintaining the Ilonggo emphasis on warmth, comfort, hospitality, and social connection.</p>
+              <p>Today, coffee in Iloilo is more than just a simple drink served in a simple cup. It has become an evolving expression of Ilonggo identity. Whether enjoyed in the bustling public markets, decades-old kapehan, coffee carts, cozy and aesthetically curated cafes, coffee continues to reflect the values of community, accessibility, and shared experience. Its evolution mirrors the capacity of Ilonggos to preserve tradition while embracing modern influences making coffee not only a beverage but a cultural practice that connects the past and the present. </p>
             </div>
           </div>
 
           {/* --- Right Column: Directory Sidebar --- */}
-          <div className="col-span-4 flex flex-col gap-6 pl-10 pt-8">
+          <div className="col-span-4 flex flex-col gap-6 pl-10 pt-8 sticky top-5 self-start">
 
             <h3 className={`${montserrat.className} text-brand-brown font-semibold text-lg uppercase tracking-wide`}>
               Iloilo City Districts Directory
