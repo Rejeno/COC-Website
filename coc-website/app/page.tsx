@@ -34,7 +34,7 @@ export default function Hero() {
 
         {/* TEXT CONTENT */}
         <div className="relative z-10 space-y-6 max-w-5xl">
-          <h1 className={`${montserrat.className} text-4xl md:text-8xl text-brand-brown font-normal leading-tight`}>
+          <h1 className={`${montserrat.className} text-4xl sm:text-5xl md:text-8xl text-brand-brown font-normal leading-tight`}>
             <span className="block md:whitespace-nowrap">Strong Coffee.</span>
             <span className="block md:whitespace-nowrap">Strong Opinions.</span>
           </h1>
@@ -115,17 +115,17 @@ export default function Hero() {
       </div>
 
       {/* --- INTRODUCTION SECTION --- */}
-      <div className="w-full bg-white pt-40 pb-20 flex justify-center">
+      <div className="w-full bg-white pt-15 md:pt-30 pb-20 flex justify-center">
 
-        <div className="w-full max-w-300px px-4 grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="w-full px-4 grid grid-cols-1 md:grid-cols-12 gap-12">
 
           {/* --- Left Column: Content --- */}
           <div className="md:col-span-8 flex flex-col gap-8">
-            <h2 className={`${montserrat.className} text-6xl font-bold text-brand-brown pl-7`}>
+            <h2 className={`${montserrat.className} text-4xl md:text-6xl font-bold text-brand-brown pl-2 md:pl-5`}>
               Introduction
             </h2>
 
-            <div className={`${montserrat.className} space-y-10 text-base text-black text-justify font-normal leading-relaxed px-10`}>
+            <div className={`${montserrat.className} space-y-10 text-sm md:text-base text-black text-justify font-normal leading-relaxed px-3 md:px-8`}>
               <p>Coffee is life. Some would even agree that it’s enough to bring the deceased back to the world of the living. Though this is quite an awfully excessive way of describing its remarkable potency, one cannot deny its caffeine magic especially in this fast-paced world plagued with school works and professional obligations that constantly comes with looming deadlines. From early morning jeepney rides to late night study sessions, coffee has been more than just a caffeine fix to kick start our day.  It has become a pause, a ritual, a sip of relaxation, or, for others, a form of self-comfort. However, while our coffee cups are often filled with three-in-one mixes or cafe brews, how often do we stop and wonder:<span className="font-semibold italic"> Is coffee just a simple drink in a simple cup? Can it be so much more than that?</span></p>
               <p>Beyond its warm, toasted aroma and Instagrammable latte art aesthetics, lies a story literally and figuratively rooted in history and its brewing culture along the busy streets and heritage districts of Iloilo. Blending tradition with modern tastes, Iloilo’s coffee scene reflects creativity and the growing appreciation of coffee drinkers and enthusiasts alike, making coffee a familiar companion in the Ilonggo way of life. </p>
               <p>Iloilo’s coffee history dates back in the post-war era, when its distinct coffee identity took shape through public market venues. One of the oldest coffee shops in Iloilo is the Madge Cafe, established in the 1940s inside La Paz Public Market. Beloved by the Ilonggo Community, then and now, Madge Cafe initiated the coffee-drinking culture in Iloilo for its traditional brews of raw coffee flavors. Another early coffee establishment is Glory’s Cafe, founded in 1948 and took up space in the Iloilo Central Market area, serving traditional brewing of local barako-style coffee.</p>
@@ -135,13 +135,13 @@ export default function Hero() {
           </div>
 
           {/* --- Right Column: Directory Sidebar --- */}
-          <div className="col-span-4 flex flex-col gap-6 pl-10 pt-8 sticky top-15 self-start">
+          <div className="md:col-span-4 flex flex-col gap-6 pl-4 md:pl-10 pt-8 sticky top-15 self-start">
 
             <h3 className={`${montserrat.className} text-brand-brown font-semibold text-lg uppercase tracking-wide`}>
               Iloilo City Districts Directory
             </h3>
 
-            <ul className={`${montserrat.className} space-y-3 text-[#737373] font-normal text-lg`}>
+            <ul className={`${montserrat.className} space-y-3 text-[#737373] font-normal text-base md:text-lg`}>
               {[
                 { name: "District of City Proper", slug: "city-proper" },
                 { name: "District of Jaro", slug: "jaro" },
