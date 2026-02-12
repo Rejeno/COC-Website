@@ -2,24 +2,25 @@
 // About page – introduces the project, mission, stats, and team
 
 import Image from 'next/image';
+import { montserrat } from '../../lib/font';
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white">
 
       {/* Hero heading + right-side image */}
-      <section className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-16 lg:mt-24">
+      <section className="mx-auto max-w-360 px-6 lg:px-15 mt-10 md:mt-16 lg:mt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div>
-            <h1 className="text-5xl sm:text-6xl lg:text-[64px] font-medium leading-tight lg:leading-[78px] text-brand-brown">
+            <h1 className={`${montserrat.className} text-4xl sm:text-6xl lg:text-[64px] font-medium leading-tight lg:leading-20 text-brand-brown`}>
               Grounded in Coffee, Driven by Thought.
             </h1>
-            <p className="mb-6 mt-12 text-justify">
+            <p className={`${montserrat.className} text-[#383838] mb-6 mt-5 md:mt-10 text-base md:text-lg text-justify`}>
               Caffeinated Spaces is a website created by journalism students to explore and celebrate the evolving coffee culture in Iloilo City. From cozy cafés to bustling coffee spots, the site features local coffee shops, highlighting their unique stories, locally produced beans, brewing techniques, atmosphere, service, and connection to the community. More than just a guide, Caffeinated Spaces aims to promote Iloilo’s coffee scene and inspire readers to support local cafés and coffee farmers. By sharing these stories, the website hopes to inform, engage, and encourage a deeper appreciation for the people and craft behind every cup of coffee in the city.
             </p>
           </div>
 
-          <div className="relative h-[400px] lg:h-[497px] rounded-[38px] overflow-hidden">
+          <div className="relative h-56 lg:h-124 rounded-[38px] overflow-hidden order-first md:order-last">
             <Image
               src="/avatar-images/mark.jpg"
               alt="About Caffeinated Spaces"
@@ -32,13 +33,13 @@ export default function AboutPage() {
       </section>
 
       {/* Stats row */}
-      <section className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-20 lg:mt-32">
-        <div className="flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-0">
+      <section className="mx-auto max-w-360 px-6 lg:px-15 mt-8 lg:mt-32">
+        <div className={`${montserrat.className} flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-0`}>
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
               65
             </p>
-            <p className="mt-3 text-xl font-medium text-brand-dark">
+            <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Visited Cafes
             </p>
           </div>
@@ -47,7 +48,7 @@ export default function AboutPage() {
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
               15
             </p>
-            <p className="mt-3 text-xl font-medium text-brand-dark">
+            <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Coffee Blogs
             </p>
           </div>
@@ -56,7 +57,7 @@ export default function AboutPage() {
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-brand-green">
               4
             </p>
-            <p className="mt-3 text-xl font-medium text-brand-dark">
+            <p className="mt-3 text-base  md:text-xl font-medium text-brand-dark">
               Blog Contributors
             </p>
           </div>
@@ -65,24 +66,24 @@ export default function AboutPage() {
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-brand-green">
               7
             </p>
-            <p className="mt-3 text-xl font-medium text-brand-dark">
+            <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Districts Featured
             </p>
           </div>
         </div>
 
-        <p className="text-xl lg:text-2xl font-medium leading-[146%] text-[#383838] text-center mt-16 lg:mt-24">
+        <p className={`${montserrat.className} text-xl lg:text-2xl font-medium leading-[146%] text-[#383838] text-center mt-16 lg:mt-24`}>
           Our mission is to serve thoughtfully crafted coffee blogs while providing a welcoming space for meaningful conversation, reflection, and exchange of ideas. We envision a café that goes beyond routine — one that encourages curiosity, informed discussion, and genuine human connection, where every cup supports focus, dialogue, and a shared appreciation for quality and insight.
         </p>
       </section>
 
       {/* Meet the team section */}
-      <section className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-24 lg:mt-32">
-        <h2 className="text-5xl sm:text-6xl lg:text-[64px] font-medium leading-tight lg:leading-[78px] text-brand-brown">
+      <section className={`${montserrat.className} mx-auto max-w-360 px-6 lg:px-15 mt-24 lg:mt-32`}>
+        <h2 className="text-4xl sm:text-6xl lg:text-[64px] font-medium leading-tight lg:leading-20 text-brand-brown">
           Meet the team
         </h2>
 
-        <p className="mt-6 max-w-[1258px] text-base lg:text-xl leading-relaxed text-[#747474]">
+        <p className="mt-6 max-w-315 text-base lg:text-xl leading-relaxed text-[#747474]">
           Meet the team that took time to curate all of the information for centralized information directory and blogs.
         </p>
 
@@ -95,7 +96,7 @@ export default function AboutPage() {
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-[320px] lg:h-[400px] transition-transform duration-500 group-hover:scale-105">
+            <div className="relative h-70 lg:h-100 transition-transform duration-500 group-hover:scale-105">
               <Image
                 src="/avatar-images/mark.jpg"
                 alt="Mark Andrei Encanto"
@@ -148,7 +149,7 @@ export default function AboutPage() {
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-[320px] lg:h-[400px] transition-transform duration-500 group-hover:scale-105">
+            <div className="relative h-80 lg:h-100 transition-transform duration-500 group-hover:scale-105">
               <Image
                 src="/avatar-images/mark.jpg"
                 alt="Team Member Name"
@@ -201,7 +202,7 @@ export default function AboutPage() {
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-[320px] lg:h-[400px] transition-transform duration-500 group-hover:scale-105">
+            <div className="relative h-80 lg:h-100 transition-transform duration-500 group-hover:scale-105">
               <Image
                 src="/avatar-images/mark.jpg"
                 alt="Another Team Member"
