@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import Head from "next/head";
+import { useState } from "react";
 import { montserrat } from '../../lib/font';
 
 // --- 1. Types & Mock Data ---
@@ -118,14 +117,14 @@ export default function NewsPage() {
         <div className="min-h-screen bg-white text-gray-800 pb-20">
 
             {/* Main Content Container */}
-            <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+            <main className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 mt-12">
 
                 {/* Page Header Area */}
                 <div className="text-center mb-12">
-                    <h1 className={`${montserrat.className} text-6xl font-bold text-brand-brown pt-17 mb-8`}>
+                    <h1 className={`${montserrat.className} text-4xl md:text-6xl font-bold text-brand-brown pt-2 md:pt-17 mb-8`}>
                         Discover our Latest Articles
                     </h1>
-                    <p className={`${montserrat.className} text-[#636262] w-300 mx-auto text-2xl`}>
+                    <p className={`${montserrat.className} text-[#636262] w-auto md:w-300 mx-auto text-base md:text-2xl`}>
                         Discover the unique coffee blogs. From groundbreaking cafe to
                         industry level ones, we take pride in our blog collections.
                     </p>
