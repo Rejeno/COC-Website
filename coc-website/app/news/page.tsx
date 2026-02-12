@@ -203,7 +203,7 @@ function ArticleCard({ article }: { article: Article }) {
             <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
 
             {/* Content Overlay */}
-            <div className={`${montserrat.className} absolute bottom-0 left-0 p-4 md:p-6 text-white w-full`}>
+            <div className={`${montserrat.className} absolute bottom-0 left-0 p-3 md:p-6 text-white w-full`}>
                 <div className="flex items-center text-xs tracking-wider mb-2 opacity-90 md:opacity-80">
                     <span>Category . {article.category}</span>
                     <span className="ml-1 md:ml-3 mr-1">|</span>
@@ -236,8 +236,8 @@ function SidebarSection({ title, items }: { title: string; items: any[] }) {
                             />
                         </div>
                         <div className="flex flex-col justify-center">
-                            <span className={`${montserrat.className} text-sm text-[#939393] mb-1`}>{item.date}</span>
-                            <h4 className={`${montserrat.className}text-base font-semibold text-[#585858] leading-snug group-hover:text-[#8B5E3C] transition-colors`}>
+                            <span className={`${montserrat.className} text-xs md:text-sm text-[#939393] mb-1`}>{item.date}</span>
+                            <h4 className={`${montserrat.className} text-sm md:text-base font-semibold text-[#585858] leading-snug group-hover:text-[#8B5E3C] transition-colors`}>
                                 {item.title}
                             </h4>
                         </div>
