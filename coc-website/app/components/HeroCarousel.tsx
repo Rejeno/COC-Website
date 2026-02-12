@@ -28,7 +28,10 @@ export default function HeroCarousel({ images, title }: HeroCarouselProps) {
   };
 
   return (
-    <div className="relative w-full overflow-hidden rounded-[38px] aspect-[16/9] lg:aspect-[21/9] group">
+    // CHANGED: 
+    // - aspect-[4/3] for taller images on mobile
+    // - lg:aspect-[2/1] adds a little more height on desktop compared to the previous 21/9
+    <div className="relative w-full overflow-hidden rounded-[38px] aspect-[4/3] lg:aspect-[2/1] group">
       {/* Images */}
       {images.map((src, index) => (
         <div
@@ -47,7 +50,7 @@ export default function HeroCarousel({ images, title }: HeroCarouselProps) {
         </div>
       ))}
 
-      {/* Overlay Gradient (Optional, makes text pop if you add captions) */}
+      {/* Overlay Gradient */}
       <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none" />
 
       {/* Left Arrow */}
