@@ -114,7 +114,7 @@ export default function ArticlePage() {
 
       {/* Separator */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
-        <div className="max-w-full lg:max-w-[820px] xl:max-w-[980px] border-b border-black" />
+        <div className="max-w-full lg:max-w-[820px] xl:max-w-[780px] border-b border-black" />
       </div>
 
       {/* Main Content Area */}
