@@ -10,7 +10,7 @@ export default function ArticlePage() {
       '/CStudio/2.jpg',
       '/CStudio/3.jpg',
       '/CStudio/4.jpg',
-      '/CStudio/5.jpg'
+      '/CStudio/5.JPG'
     ],
     inlineImage: '/CStudio/4.jpg',
     author: 'Leigh Diane Mandado',
@@ -51,30 +51,38 @@ export default function ArticlePage() {
 
       {/* Hero Carousel Component */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
-        <HeroCarousel images={article.heroImages} title={article.title} />
+        {/* CHANGED: aspect-[4/3] for mobile (taller), aspect-[21/9] for desktop */}
+        <div className="w-full aspect-[4/3] lg:aspect-[21/9] overflow-hidden rounded-[38px]">
+           <HeroCarousel images={article.heroImages} title={article.title} />
+        </div>
       </div>
 
       {/* Title + CTA */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-12 lg:mt-16">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-0">
-          <div className="max-w-[920px] lg:max-w-[780px] xl:max-w-[880px]">
-            <h1 className="text-4xl sm:text-5xl lg:text-[64px] font-semibold leading-tight lg:leading-[78px] text-brand-brown">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-16">
+        {/* CHANGED: flex-row on mobile to put icon next to title */}
+        <div className="flex flex-row flex-wrap lg:flex-nowrap items-start justify-between gap-4 lg:gap-0">
+          
+          <div className="flex-1 max-w-[85%] lg:max-w-[880px]">
+            <h1 className="text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-tight lg:leading-[78px] text-brand-brown">
               {article.title}
             </h1>
           </div>
 
-          <div className="flex flex-col items-start lg:items-end gap-3 mt-4 lg:mt-4">
-            <p className="text-lg lg:text-xl font-semibold text-brand-gray">
+          {/* Social Icon Section */}
+          <div className="flex flex-col items-end lg:items-end gap-3 mt-1 lg:mt-4 shrink-0">
+            {/* CHANGED: Hidden on mobile, visible on large screens */}
+            <p className="hidden lg:block text-xl font-semibold text-brand-gray">
               Follow our Facebook Page
             </p>
+            
             <a 
               href={article.facebookLink}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow us on Facebook" 
-              className="flex h-11 w-11 items-center justify-center rounded-[13px] bg-brand-green text-white hover:bg-opacity-90 transition-colors"
+              className="flex h-10 w-10 lg:h-11 lg:w-11 items-center justify-center rounded-[13px] bg-brand-green text-white hover:bg-opacity-90 transition-colors"
             >
-              <svg className="h-[22px] w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-5 w-5 lg:h-[22px] lg:w-[22px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
@@ -83,27 +91,27 @@ export default function ArticlePage() {
       </div>
 
       {/* Author Info */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-10 lg:mt-12">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-12">
-          <div className="flex items-start gap-5">
-            <div className="h-[60px] w-[60px] lg:h-[76px] lg:w-[76px] rounded-full overflow-hidden flex-shrink-0">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-12">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-12">
+          <div className="flex items-center lg:items-start gap-4 lg:gap-5">
+            <div className="h-[50px] w-[50px] lg:h-[76px] lg:w-[76px] rounded-full overflow-hidden flex-shrink-0">
               <Image src={article.avatar} alt={article.author} width={76} height={76} className="h-full w-full object-cover" />
             </div>
-            <div className="flex flex-col">
-              <p className="text-lg lg:text-xl text-brand-light-gray">{article.author}</p>
-              <p className="text-xl lg:text-2xl font-semibold text-brand-dark">{article.role}</p>
+            <div className="flex flex-col justify-center">
+              <p className="text-base lg:text-xl text-brand-light-gray">{article.author}</p>
+              <p className="text-lg lg:text-2xl font-semibold text-brand-dark">{article.role}</p>
             </div>
           </div>
 
-          <div className="flex flex-wrap justify-start lg:justify-end items-end gap-x-8 gap-y-3 text-brand-dark text-sm lg:text-base">
+          <div className="flex flex-wrap justify-start lg:justify-end items-center gap-6 lg:gap-8 text-brand-dark text-sm lg:text-base mt-2 lg:mt-0">
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-4 w-4 lg:h-5 lg:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" />
               </svg>
               <span>{article.date}</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="h-4 w-4 lg:h-5 lg:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="13" r="8" /> <path d="M12 6v6l4 2" />
               </svg>
               <span>{article.readTime}</span>
@@ -113,12 +121,12 @@ export default function ArticlePage() {
       </div>
 
       {/* Separator */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-6 lg:mt-10">
         <div className="max-w-full lg:max-w-[820px] xl:max-w-[780px] border-b border-black" />
       </div>
 
       {/* Main Content Area */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-12 lg:mt-16">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12 lg:gap-16">
           
           {/* Article Text Content */}
@@ -128,7 +136,7 @@ export default function ArticlePage() {
                 <div key={i}>
                   {/* INLINE IMAGE LOGIC */}
                   {i === 1 && (
-                    <div className="relative w-full h-[300px] mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:h-[350px] lg:float-right rounded-2xl overflow-hidden">
+                    <div className="relative w-full h-[250px] mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:h-[350px] lg:float-right rounded-2xl overflow-hidden">
                       <Image 
                         src={article.inlineImage}
                         alt="Inline content image"
@@ -138,7 +146,7 @@ export default function ArticlePage() {
                     </div>
                   )}
                   
-                  <p className="mb-7 text-base lg:text-lg leading-relaxed text-justify tracking-wide">
+                  <p className="mb-6 text-base lg:text-lg leading-relaxed text-justify tracking-wide">
                     {para.trim()}
                   </p>
                 </div>
@@ -206,7 +214,7 @@ export default function ArticlePage() {
                     Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                   As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands ...
+                    As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     2 hrs ago | City Proper
