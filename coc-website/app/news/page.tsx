@@ -136,7 +136,7 @@ export default function NewsPage() {
                         <button
                             key={category}
                             onClick={() => setActiveFilter(category)}
-                            className={`${montserrat.className} w-37 h-9 px-8 py-1 rounded-sm font-semibold transition-colors duration-200 ${activeFilter === category
+                            className={`${montserrat.className} w-37 h-9 px-8 py-1 rounded-sm text-sm md:text-base font-semibold transition-colors duration-200 ${activeFilter === category
                                 ? "bg-brand-green text-white" // Active Style (Olive Green)
                                 : "bg-[#EAEAEA] text-black cursor-pointer" // Inactive Style (Light Gray)
                                 }`}
@@ -146,19 +146,19 @@ export default function NewsPage() {
                     ))}
                 </div>
                 {/* --- MAIN CONTENT LAYOUT (Grid) --- */}
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
 
                     {/* LEFT COLUMN: Main Articles Grid (Takes up 3/4 width on large screens) */}
-                    <div className="lg:col-span-3">
+                    <div className="md:col-span-3">
                         <div className="flex items-center gap-4 mb-8">
-                            <h2 className={`${montserrat.className} text-4xl font-semibold text-brand-brown whitespace-nowrap`}>
+                            <h2 className={`${montserrat.className} text-xl md:text-4xl font-semibold text-brand-brown whitespace-nowrap`}>
                                 Coffee runs in our veins
                             </h2>
                             <div className="h-[0.5px] bg-brand-light-gray w-full mt-2"></div>
                         </div>
 
                         {/* The Article Cards Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6">
                             {filteredArticles.length > 0 ? (
                                 filteredArticles.map((article) => (
                                     <ArticleCard key={article.id} article={article} />
@@ -191,7 +191,7 @@ export default function NewsPage() {
 // The Main Large Card Component
 function ArticleCard({ article }: { article: Article }) {
     return (
-        <div className="group relative h-100 w-full rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+        <div className="group relative w-full aspect-4/5 rounded-3xl overflow-hidden cursor-pointer shadow-sm hover:shadow-md transition-shadow">
             {/* Background Image */}
             <img
                 src={article.imageUrl}
@@ -200,16 +200,16 @@ function ArticleCard({ article }: { article: Article }) {
             />
 
             {/* Dark Overlay Gradient */}
-            <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent"></div>
 
             {/* Content Overlay */}
-            <div className={`${montserrat.className} absolute bottom-0 left-0 p-6 text-white w-full`}>
-                <div className="flex items-center text-xs tracking-wider mb-2 opacity-80">
+            <div className={`${montserrat.className} absolute bottom-0 left-0 p-4 md:p-6 text-white w-full`}>
+                <div className="flex items-center text-xs tracking-wider mb-2 opacity-90 md:opacity-80">
                     <span>Category . {article.category}</span>
-                    <span className="ml-3 mr-1">|</span>
+                    <span className="ml-1 md:ml-3 mr-1">|</span>
                     <span>{article.date}</span>
                 </div>
-                <h3 className="text-2xl font-bold leading-tight mb-2">
+                <h3 className="text-base md:text-2xl font-bold leading-tight mb-2">
                     {article.title}
                 </h3>
             </div>
@@ -221,7 +221,7 @@ function SidebarSection({ title, items }: { title: string; items: any[] }) {
     return (
         <div>
             <div className="flex items-center gap-4 mt-2 mb-6">
-                <h3 className={`${montserrat.className} text-xl font-semibold text-accent-brown`}>{title}</h3>
+                <h3 className={`${montserrat.className} text-lg md:text-xl font-semibold text-accent-brown`}>{title}</h3>
                 <div className="h-[0.5px] bg-brand-light-gray w-full mt-1"></div>
             </div>
 
