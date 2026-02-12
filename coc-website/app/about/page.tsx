@@ -13,16 +13,19 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           <div>
             <h1 className={`${montserrat.className} text-4xl sm:text-6xl lg:text-[64px] font-medium leading-tight lg:leading-20 text-brand-brown`}>
-              Grounded in Coffee, Driven by Thought.
+              Savor the Story Behind Every Cup
             </h1>
             <p className={`${montserrat.className} text-[#383838] mb-6 mt-5 md:mt-10 text-base md:text-lg text-justify`}>
-              Caffeinated Spaces is a website created by journalism students to explore and celebrate the evolving coffee culture in Iloilo City. From cozy cafés to bustling coffee spots, the site features local coffee shops, highlighting their unique stories, locally produced beans, brewing techniques, atmosphere, service, and connection to the community. More than just a guide, Caffeinated Spaces aims to promote Iloilo’s coffee scene and inspire readers to support local cafés and coffee farmers. By sharing these stories, the website hopes to inform, engage, and encourage a deeper appreciation for the people and craft behind every cup of coffee in the city.
+              Caffeinated Spaces is a website created by journalism students to explore and celebrate the evolving coffee culture in Iloilo City. From cozy cafés to bustling coffee spots, the site features local coffee shops, highlighting their unique stories, locally sourced beans, brewing techniques, ambience, service, and connection to the community.
+            </p>
+            <p className={`${montserrat.className} text-[#383838] mb-6 mt-5 md:mt-10 text-base md:text-lg text-justify`}>
+              More than just a guide, Caffeinated Spaces aims to promote Iloilo’s coffee scene and inspire readers to support local cafés and coffee farmers. By sharing these stories, the website hopes to inform, engage, and encourage a deeper appreciation for the people and craft behind every cup of coffee in the city.
             </p>
           </div>
 
-          <div className="relative h-56 lg:h-124 rounded-[38px] overflow-hidden order-first md:order-last">
+          <div className="relative h-56 lg:h-124 lg:mt-8 rounded-[38px] overflow-hidden order-first md:order-last">
             <Image
-              src="/avatar-images/mark.jpg"
+              src="/cover-image.jpg"
               alt="About Caffeinated Spaces"
               fill
               className="object-cover"
@@ -96,21 +99,25 @@ export default function AboutPage() {
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-70 lg:h-100 transition-transform duration-500 group-hover:scale-105">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
               <Image
-                src="/avatar-images/mark.jpg"
-                alt="Mark Andrei Encanto"
+                src="/Authors/trixie.jpg"
+                alt="Trixie"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 50%' }}
               />
             </div>
 
             <div className="p-6 lg:p-8">
               <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
-                Mark Andrei Encanto
+                Trixie Aurelia T. Ningas
               </h3>
               <p className="mt-1 text-base text-brand-light-gray">
-                Bachelor of Science in Computer Science
+                Editor & Multimedia Lead
               </p>
 
               <div className="mt-6 flex gap-4">
@@ -149,21 +156,25 @@ export default function AboutPage() {
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-80 lg:h-100 transition-transform duration-500 group-hover:scale-105">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
               <Image
-                src="/avatar-images/mark.jpg"
-                alt="Team Member Name"
+                src="/Authors/leigh.jpg"
+                alt="Trixie"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 30%' }}
               />
             </div>
 
             <div className="p-6 lg:p-8">
               <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
-                Team Member Name
+                Leigh Diane M. Mandado
               </h3>
               <p className="mt-1 text-base text-brand-light-gray">
-                Degree / Role
+                Lead Photographer & Visual Storyteller
               </p>
 
               <div className="mt-6 flex gap-4">
@@ -196,27 +207,31 @@ export default function AboutPage() {
           </div>
 
           {/* Card 3 */}
-          <div className="
+            <div className="
             overflow-hidden rounded-[36px] bg-white shadow-lg
             transition-all duration-300 ease-out
             hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
             group
           ">
-            <div className="relative h-80 lg:h-100 transition-transform duration-500 group-hover:scale-105">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
               <Image
-                src="/avatar-images/mark.jpg"
-                alt="Another Team Member"
+                src="/Authors/kelley.jpg"
+                alt="Trixie"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 50%' }}
               />
             </div>
 
             <div className="p-6 lg:p-8">
               <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
-                Another Team Member
+                Kelley Marie G. Matoy
               </h3>
               <p className="mt-1 text-base text-brand-light-gray">
-                Degree / Role
+                Project Coordinator & Content Writer
               </p>
 
               <div className="mt-6 flex gap-4">

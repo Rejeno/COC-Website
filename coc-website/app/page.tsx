@@ -1,4 +1,3 @@
-// app/components/Hero.tsx  (or wherever this component lives)
 // Hero section – main landing visual with heading, button, image grid, intro, and districts sidebar
 
 import Image from "next/image";
@@ -39,9 +38,12 @@ export default function Hero() {
             <span className="block md:whitespace-nowrap">Strong Opinions.</span>
           </h1>
 
-          <button className={`${montserrat.className} bg-brand-green cursor-pointer text-white px-5 pt-2 pb-3 md:px-7 md:pt-4 md:pb-5 rounded-[15px] text-md md:text-2xl font-medium transition-colors duration-200`}>
-            Read an article
-          </button>
+          <Link href="/news">
+            {/* UPDATED BUTTON: Added hover:scale-105, active:scale-95, shadow effects */}
+            <button className={`${montserrat.className} bg-brand-green cursor-pointer text-white px-5 pt-2 pb-3 md:px-7 md:pt-4 md:pb-5 rounded-[15px] text-md md:text-2xl font-medium transition-all duration-300 hover:bg-opacity-90 hover:scale-105 active:scale-95 shadow-md hover:shadow-xl`}>
+              Read an article
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -62,7 +64,7 @@ export default function Hero() {
                 {/* Large Top */}
                 <div className="relative w-full flex-3 min-h-0 overflow-hidden rounded-2xl">
                   <Image
-                    src="/hero-images/coffee.png"
+                    src="/cover-image.jpg"
                     alt="Latte Art Large"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -71,7 +73,7 @@ export default function Hero() {
                 {/* Small Bottom */}
                 <div className="relative w-full flex-1 min-h-0 overflow-hidden rounded-2xl">
                   <Image
-                    src="/hero-images/coffee.png"
+                    src="/Palpitate/1.jpg"
                     alt="Latte Art Small"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -84,7 +86,7 @@ export default function Hero() {
                 {/* Small Top */}
                 <div className="relative w-full flex-1 min-h-0 overflow-hidden rounded-2xl">
                   <Image
-                    src="/hero-images/coffee.png"
+                    src="/Palpitate/5.jpg"
                     alt="Latte Art Wide 1"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -93,7 +95,7 @@ export default function Hero() {
                 {/* Small Middle */}
                 <div className="relative w-full flex-1 min-h-0 overflow-hidden rounded-2xl">
                   <Image
-                    src="/hero-images/coffee.png"
+                    src="/CStudio/1.jpg"
                     alt="Latte Art Wide 2"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -102,7 +104,7 @@ export default function Hero() {
                 {/* Large Bottom */}
                 <div className="relative w-full flex-2 min-h-0 overflow-hidden rounded-2xl">
                   <Image
-                    src="/hero-images/coffee.png"
+                    src="/CStudio/4.jpg"
                     alt="Coffee Dark"
                     fill
                     className="object-cover hover:scale-105 transition-transform duration-500"
@@ -117,7 +119,7 @@ export default function Hero() {
       {/* --- INTRODUCTION SECTION --- */}
       <div className="w-full bg-white pt-15 md:pt-30 pb-20 flex justify-center">
 
-        <div className="w-full px-4 grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="w-full px-4 grid grid-cols-1 md:grid-cols-12 gap-12 max-w-7xl">
 
           {/* --- Left Column: Content --- */}
           <div className="md:col-span-8 flex flex-col gap-8">
@@ -143,16 +145,17 @@ export default function Hero() {
 
             <ul className={`${montserrat.className} space-y-3 text-[#737373] font-normal text-base md:text-lg`}>
               {[
-                { name: "District of City Proper", slug: "city-proper" },
-                { name: "District of Jaro", slug: "jaro" },
-                { name: "District of La Paz", slug: "la-paz" },
-                { name: "District of Lapuz", slug: "lapuz" },
-                { name: "District of Mandurriao", slug: "mandurriao" },
-                { name: "District of Molo", slug: "molo" },
-                { name: "District of Villa", slug: "villa" },
+                { name: "District of City Proper", filterName: "Iloilo City" },
+                { name: "District of Jaro", filterName: "Jaro" },
+                { name: "District of La Paz", filterName: "La Paz" },
+                { name: "District of Lapuz", filterName: "Lapuz" },
+                { name: "District of Mandurriao", filterName: "Mandurriao" },
+                { name: "District of Molo", filterName: "Molo" },
+                { name: "District of Villa", filterName: "Villa" },
               ].map((district) => (
-                <li key={district.slug} className="hover:text-[#5B4332] cursor-pointer transition-colors">
-                  <Link href={`/districts/${district.slug}`}>
+                <li key={district.filterName} className="hover:text-[#5B4332] cursor-pointer transition-colors">
+                  {/* Updated Link to pass query parameter for filtering */}
+                  <Link href={`/news?district=${encodeURIComponent(district.filterName)}`}>
                     {district.name}
                   </Link>
                 </li>
