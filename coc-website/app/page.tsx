@@ -48,7 +48,7 @@ export default function Hero() {
       </div>
 
       {/* --- PART 2: THE CARD --- */}
-       <div className="relative z-20 -mt-35 md:-mt-80 w-[90%] md:w-300 pb-10 md:pb-0">
+       <div className="relative z-20 -mt-35 md:-mt-80 w-[90%] md:w-300">
         
         {/* Outer Grayish Transparent Border Wrapper */}
         <div className="bg-[#DFDADA69] w-full p-3 md:p-8 rounded-[25px] backdrop-blur-md">
@@ -117,17 +117,13 @@ export default function Hero() {
       </div>
 
       {/* --- INTRODUCTION SECTION --- */}
-      <div className="w-full bg-white pt-15 md:pt-30 pb-20 flex justify-center">
+      <div className="w-full bg-white pt-15 md:pt-15 pb-15 flex justify-center">
 
-        <div className="w-full px-4 grid grid-cols-1 md:grid-cols-12 gap-12 max-w-7xl">
+        <div className="w-full px-4 grid grid-cols-1 md:grid-cols-12 gap-12">
 
           {/* --- Left Column: Content --- */}
           <div className="md:col-span-8 flex flex-col gap-8">
-            <h2 className={`${montserrat.className} text-4xl md:text-6xl font-bold text-brand-brown pl-2 md:pl-5`}>
-              Introduction
-            </h2>
-
-            <div className={`${montserrat.className} space-y-10 text-sm md:text-base text-black text-justify font-normal leading-relaxed px-3 md:px-8`}>
+            <div className={`${montserrat.className} space-y-10 text-sm md:text-lg text-black text-justify font-normal leading-relaxed px-3 md:px-8`}>
               <p>Coffee is life. Some would even agree that it’s enough to bring the deceased back to the world of the living. Though this is quite an awfully excessive way of describing its remarkable potency, one cannot deny its caffeine magic especially in this fast-paced world plagued with school works and professional obligations that constantly comes with looming deadlines. From early morning jeepney rides to late night study sessions, coffee has been more than just a caffeine fix to kick start our day.  It has become a pause, a ritual, a sip of relaxation, or, for others, a form of self-comfort. However, while our coffee cups are often filled with three-in-one mixes or cafe brews, how often do we stop and wonder:<span className="font-semibold italic"> Is coffee just a simple drink in a simple cup? Can it be so much more than that?</span></p>
               <p>Beyond its warm, toasted aroma and Instagrammable latte art aesthetics, lies a story literally and figuratively rooted in history and its brewing culture along the busy streets and heritage districts of Iloilo. Blending tradition with modern tastes, Iloilo’s coffee scene reflects creativity and the growing appreciation of coffee drinkers and enthusiasts alike, making coffee a familiar companion in the Ilonggo way of life. </p>
               <p>Iloilo’s coffee history dates back in the post-war era, when its distinct coffee identity took shape through public market venues. One of the oldest coffee shops in Iloilo is the Madge Cafe, established in the 1940s inside La Paz Public Market. Beloved by the Ilonggo Community, then and now, Madge Cafe initiated the coffee-drinking culture in Iloilo for its traditional brews of raw coffee flavors. Another early coffee establishment is Glory’s Cafe, founded in 1948 and took up space in the Iloilo Central Market area, serving traditional brewing of local barako-style coffee.</p>
@@ -137,7 +133,7 @@ export default function Hero() {
           </div>
 
           {/* --- Right Column: Directory Sidebar --- */}
-          <div className="md:col-span-4 flex flex-col gap-6 pl-4 md:pl-10 pt-8 sticky top-15 self-start">
+          <div className="md:col-span-4 flex flex-col gap-6 pl-4 md:pl-10 sticky top-25 self-start">
 
             <h3 className={`${montserrat.className} text-brand-brown font-semibold text-lg uppercase tracking-wide`}>
               Iloilo City Districts Directory
