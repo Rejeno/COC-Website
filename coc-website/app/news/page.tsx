@@ -105,17 +105,17 @@ function NewsContent() {
               {activeFilter === "Jaro" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="Cafe Nahum"
+                    category="Jaro"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/CAFE-NAHUM/4.jpg"
                     link="/news/city-proper/coffee-studio"
                   />
                   <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
+                    title="The Yield Specialty Coffee"
+                    category="Jaro"
                     date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
+                    imageUrl="/THE-YIELD/1.jpg"
                     link="/news/city-proper/palpitate"
                   />
                 </>
@@ -145,18 +145,11 @@ function NewsContent() {
               {activeFilter === "Molo" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="Bruskoffee"
+                    category="Molo"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/Bruskoffee/4.jpg"
                     link="/news/city-proper/coffee-studio"
-                  />
-                  <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
-                    date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
-                    link="/news/city-proper/palpitate"
                   />
                 </>
               )}
@@ -165,17 +158,17 @@ function NewsContent() {
               {activeFilter === "Lapuz" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="V&V Coffee"
+                    category="Lapuz"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/V&V/4.jpg"
                     link="/news/city-proper/coffee-studio"
                   />
                   <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
+                    title="Aria's Burger and Coffee"
+                    category="Lapuz"
                     date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
+                    imageUrl="/ARIA_S/3.jpg"
                     link="/news/city-proper/palpitate"
                   />
                 </>
@@ -185,17 +178,17 @@ function NewsContent() {
               {activeFilter === "La Paz" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="Madge Cafe"
+                    category="La Paz"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/Madge/2.jpg"
                     link="/news/city-proper/coffee-studio"
                   />
                   <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
+                    title="Paul Kaldi Coffee"
+                    category="Lapaz"
                     date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
+                    imageUrl="/paul-kaldi/5.jpg"
                     link="/news/city-proper/palpitate"
                   />
                 </>
@@ -205,17 +198,17 @@ function NewsContent() {
               {activeFilter === "Villa" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="3rd Gen Glory's Cafe"
+                    category="Villa"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/3rd-gen/4.jpg"
                     link="/news/city-proper/coffee-studio"
                   />
                   <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
+                    title="Iloilo Coffee House"
+                    category="Villa"
                     date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
+                    imageUrl="/Iloilo-Coffee-House/5.jpg"
                     link="/news/city-proper/palpitate"
                   />
                 </>
@@ -225,17 +218,17 @@ function NewsContent() {
               {activeFilter === "Mandurriao" && (
                 <>
                   <ArticleCard
-                    title="Coffee Studio"
-                    category="Iloilo City"
+                    title="Loco Local Coffee"
+                    category="Mandurriao"
                     date="04 Feb"
-                    imageUrl="/CStudio/4.jpg"
+                    imageUrl="/Loco/3.jpg"
                     link="/news/city-proper/coffee-studio"
                   />
                   <ArticleCard
-                    title="Palpitate"
-                    category="Iloilo City"
+                    title="Kyo Coffee"
+                    category="Mandurriao"
                     date="06 Feb"
-                    imageUrl="/Palpitate/1.jpg"
+                    imageUrl="/Kyo/1.jpg"
                     link="/news/city-proper/palpitate"
                   />
                 </>
