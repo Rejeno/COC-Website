@@ -52,9 +52,8 @@ export default function HeroCarousel({ images, title }: HeroCarouselProps) {
           
           {/* Caption Overlay */}
           {imgData.caption && (
-            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-20 pb-14 lg:pb-16 px-6 md:px-16 text-center">
-              {/* CHANGED: Added italic, text-white/70 (reduced opacity), and set sizes to 14px mobile / 24px desktop */}
-              <p className="text-white/70 text-[14px] md:text-lg lg:text-2xl italic font-light tracking-wide drop-shadow-md">
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/70 to-transparent pt-20 pb-14 lg:pb-16 px-6 md:px-16 text-center">
+              <p className="text-white text-[14px] md:text-lg lg:text-2xl italic font-light tracking-wide drop-shadow-md">
                 {imgData.caption}
               </p>
             </div>
