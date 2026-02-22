@@ -4,32 +4,35 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Finding Comfort at Cafe Nahum',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/CAFE-NAHUM/1.jpg', caption: ' Chasing the shadows with the sun colors in a cold glass of latte' },
+      { src: '/CAFE-NAHUM/2.jpg', caption: 'The ultimate duo, a latte and a sweet sandwich beside it.' },
+      { src: '/CAFE-NAHUM/3.jpg', caption: 'Crafting the perfect swirl in a signature Nahum latte' },
+      { src: '/CAFE-NAHUM/4.jpg', caption: 'A warm , golden hour sanctuary somewhere in Jaro' },
+      { src: '/CAFE-NAHUM/5.JPG', caption: 'Appreciating the beauty of the flavors of local beans from your cup' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/CAFE-NAHUM/3.jpg',
+    inlineImageCaption: 'Crafting the perfect swirl in a signature Nahum latte',
+    inlineImage2: '/CAFE-NAHUM/4.jpg',
+    inlineImage2Caption: 'A warm, golden hour sanctuary somewhere in Jaro',
+    author: 'Leigh Diane Mandado',
+    date: 'January 30, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: '18 Commission Civil St, Jaro, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/cafenahumans?mibextid=rS40aB7S9Ucbxw6v',
+    content: `Tucked along Commission Civil Street in Jaro, Iloilo, Cafe Nahum is more than just a coffee stop. It’s a space where comfort, creativity, and community come together. From the moment you step inside, the café welcomes you with a calm, homey atmosphere that invites you to slow down, take a little sip, and stay a little longer.
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Cafe Nahum takes pride in highlighting locally sourced coffee beans through its signature blend, offering customers a taste that is both familiar and thoughtfully crafted. Alongside classic coffee favorites, the menu also features matcha-based drinks and refreshing fruit teas, making it easy to find something whether you’re craving a strong caffeine kick or a lighter and more refreshing option.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+One of the café’s must-try drinks is the Nahum Latte, a creamy yet balanced cup that doesn’t overpower the boldness of the coffee. The milk adds just the right touch of sweetness, allowing the richness of the brew to shine through. Another drink to try is the Biscoff Coffee, where the distinct crunch and caramelized flavor of Biscoff create depth and texture that perfectly complement the coffee. Pair either drink with their brownies, crunchy on the outside, moist and chocolatey on the inside, for a simple but deeply satisfying treat.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+Beyond its beverages, Cafe Nahum offers a generous selection of food options. For those looking for something filling, they offer various rice meals such as their chicken pastil and silog meals. Lighter bites such as meaty nachos and sandwiches filled with Biscoff, Nutella, or egg are also available, making the café suitable for quick snacks or casual meals.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+What truly sets Cafe Nahum apart is its inviting ambiance. Designed with warm tones and accompanied by relaxing music, the space feels equally ideal for studying, working, or catching up with friends. Whether you’re seeking quiet focus or a place to unwind after a long day, the café adapts effortlessly to your mood.
+
+Cafe Nahum offers not only good food and well-crafted drinks, but they create a space where people can connect, reflect, and feel at ease. In a busy corner of Jaro, it stands as a gentle reminder to enjoy the moment and savor the simple joys of a good cup of coffee.
+
 `,
   };
 
@@ -208,18 +211,6 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
                 <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     Brewing Passion at Yield Specialty Coffee
@@ -232,15 +223,27 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    2 hrs ago | City Proper
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Cozy Escape at Arias Burger and Coffee
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                    The rich scent of freshly brewed locally-sourced beans is enough...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    14 days ago | Lapuz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

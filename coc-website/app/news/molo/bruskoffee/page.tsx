@@ -4,32 +4,33 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Coffee and Comfort in Your Neighborhood Brew',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Bruskoffee/1.jpg', caption: 'Sweet, salted, and ice-cold cup as an afternoon refresher' },
+      { src: '/Bruskoffee/2.jpg', caption: 'Grab a coffee and strike a pose at Bruskoffee' },
+      { src: '/Bruskoffee/3.jpg', caption: 'Latte art in motion at Bruskoffee' },
+      { src: '/Bruskoffee/4.jpg', caption: 'Coffee in dark mode at Bruskoffee’s sleek, monochrome aesthetic' },
+      { src: '/Bruskoffee/5.JPG', caption: 'Sip and savor in this perfect Mocha pour' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
+    inlineImage: '/Bruskoffee/1.jpg',
+    inlineImageCaption: 'Sweet, salted, and ice-cold cup as an afternoon refresher',
+    inlineImage2: '/Bruskoffee/2.jpg',
+    inlineImage2Caption: 'Grab a coffee and strike a pose at Bruskoffee',
     author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    date: 'January 22, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: '40 MH del Pilar St, Molo 5000 Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/17xitM4hpr/',
+    content: `If you’re looking for a space where you can sink into your thoughts while sipping your favorite drink, Bruskoffee is just right for you. Just a short walk from several universities in Molo, Bruskoffee has become a familiar stop for students seeking both caffeine and calm. Located at 40 MH del Pilar Street, Molo, Iloilo City, this neighborhood café offers a quiet space where people can slow down, focus, and feel at ease.
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Starting  from a small setup in a home garage, Bruskoffee grew into what it is today through passion and curiosity about coffee. What began as simple experiments with a single coffee machine gradually developed into a full café built on consistency and care. The name “Bruskoffee” reflects a blunt approach to what truly matters - strong coffee, clean process, and a space that feels real. A brand that focuses on quality and consistency over trends.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+The café uses locally sourced coffee beans, blending Arabica and Robusta from Igbaras. They also collaborate with local coffee communities that support farmers, believing that these partnerships help strengthen the industry and contribute to the growth of Ilonggo coffee culture. More than just following the trends, Bruskoffee focuses on quality and creating drinks that customers can return to time and time again.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+The café has a minimalist design that creates a calming mood for the customers. Plain and dark-toned walls, soft jazz music, and uncluttered spaces make it an ideal place for studying, working, or simply enjoying quiet conversations. A comfortable place where customers can relax and savor bold and balanced coffee.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+As a neighborhood café, Bruskoffee has witnessed many small but meaningful moments – from students preparing for their licensure examinations and eventually passing and becoming professionals to wedding celebrations and family gatherings. It is without doubt that Bruskoffee offers a welcoming spot where customers can linger. It has grown into a familiar and comforting space where conversations flow and everyday routines unfold.
+
 `,
   };
 
@@ -210,37 +211,37 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
                 {/* Article Recommendation 1 */}
                 <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     A Timeless Taste of Ilonggo Comfort
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                     True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     9 days ago | Molo
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Palpitate Coffee Where the Rush Slows Down
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    2 hrs ago | City Proper
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Cozy Escape at Arias Burger and Coffee
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                    The rich scent of freshly brewed locally-sourced beans is enough...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    14 days ago | Lapuz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

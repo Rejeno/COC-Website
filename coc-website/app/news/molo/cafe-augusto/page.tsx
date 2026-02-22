@@ -4,32 +4,33 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'A Timeless Taste of Ilonggo Comfort',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/CAugusto/1.jpg', caption: 'Warm tone and good vibes at Café Augusto' },
+      { src: '/CAugusto/2.jpg', caption: 'Savory, fresh, and cold brewed perfect for an afternoon chill' },
+      { src: '/CAugusto/3.jpg', caption: 'Café Augusto’s signature Brewed House Blend on ice!' },
+      { src: '/CAugusto/4.jpg', caption: 'Crisp galletas paired with a hot fresh brew' },
+      { src: '/CAugusto/5.JPG', caption: ' Retro calls and coffee sketches in the house' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
+    inlineImage: '/CAugusto/1.jpg',
+    inlineImageCaption: 'Warm tone and good vibes at Café Augusto',
+    inlineImage2: '/CAugusto/2.jpg',
+    inlineImage2Caption: 'Savory, fresh, and cold brewed perfect for an afternoon chill',
     author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    date: 'February 1, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: 'Avanceña St, Molo, beside Panaderia de Molo & Phoenix Gas Station, Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/1Gi5n8ErvP/',
+    content: `Stepping into Café Augusto feels like walking into a familiar place. The space carries a simple, homey vibe inspired by classic Filipino-Spanish furnishings, focused on comfort and a welcoming environment for guests. It is a place rooted in family, tradition, and Ilonggo comfort food.
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Café Augusto began as a small café along the Esplanade 2 with the goal of serving all-day breakfast and traditional pancit molo. The café was opened by a couple who both come from families involved in the baking business. Its name is a tribute to the owner’s late grandfather, Augusto B. Villaluna, who supported their family’s catering and baking ventures. Upholding this legacy, the café continues to serve Ilonggo comfort food and merienda favorites to keep the culture and tradition alive.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+True to its mission of preserving Ilonggo food heritage, Café Augusto highlights family heirloom recipes and local delicacies. Their pancit molo, a local dish, reflects this commitment to tradition. When paired with their signature House Blend Brewed Coffee, it makes for a satisfying and balanced meal. The house blend, carefully curated by the café, offers a light and smooth flavor that is not too strong—ideal for beginners or those who prefer a gentler cup. Its subtle notes complement savory dishes like pancit molo without overpowering them, creating a comforting dining experience.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+Café Augusto uses a blend of local Robusta and imported Arabica beans, supporting local suppliers while maintaining quality. This balance mirrors their overall approach of honoring tradition while adapting to modern tastes. For them, venturing into the local business scene came with challenges, but adapting to trends and customer preferences has shaped the café into what it is today.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+Frequented by tourists and families who crave nostalgic flavors, Café Augusto continues to serve warm Ilonggo comfort food with heart. As Iloilo grows as a City of Gastronomy, the café aims to become a notable destination for local coffee, Ilonggo delicacies, and traditional heritage dishes—where every meal and cup is served with intention and the desire to bring back memories.
+
 `,
   };
 
@@ -208,15 +209,15 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/molo/bruskoffee" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Coffee and Comfort in Your Neighborhood Brew
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    Starting  from a small setup in a home garage, Bruskof...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -232,15 +233,15 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    Home Brewed with Love at V&V Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    13 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

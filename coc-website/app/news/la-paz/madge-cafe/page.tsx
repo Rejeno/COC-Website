@@ -4,32 +4,30 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Traditional Taste Crafted Through Decades of Passion',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Madge/1.jpg', caption: 'Madge Cafe uses the Sock-Filter Brewing Method to preserve coffee’s traditional flavor profiles.' },
+      { src: '/Madge/2.jpg', caption: 'Hot and cold brews paired with the best tasting betchokoy.' },
+      { src: '/Madge/3.jpg', caption: 'Personalized ceramic mugs for a personalized experience.' },
+      { src: '/Madge/4.jpg', caption: 'Ice Coffee for a hot day.' },
+      { src: '/Madge/5.JPG', caption: 'A glimpse of Madge Cafe where every brew tells a story.' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/Madge/1.jpg',
+    inlineImageCaption: 'Madge Cafe uses the Sock-Filter Brewing Method to preserve coffee’s traditional flavor profiles.',
+    inlineImage2: '/Madge/2.jpg',
+    inlineImage2Caption: 'Hot and cold brews paired with the best tasting betchokoy.',
+    author: 'Trixie Aurelia Ningas',
+    date: 'January 30, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: ' La Paz Public Market, Cor. Rizal - Huervana Sts., La Paz, Iloilo City, 5000 Iloilo',
+    facebookLink: '##',
+    content: `Caught in a chaotic loop where people crave for a faster pace of life – instant service, instant gratification, and instant results – we often forget the wonders of patience and savoring what is real. Sometimes, we forget to sit down, relax, and enjoy a nice warm cup of coffee every once in a while. It’s one thing to make three-in-one mixes that can satiate one’s urge for a warm, quick drink amidst the rainy seasons; it’s another to drink cafe brews that can satisfy one’s appreciation for traditional coffee flavors. And Madge Cafe reminds us that coffee is meant to be savored, not rushed. 
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Past the busy streets of La Paz, through the raucous crowds of the newly built public market, Madge Cafe welcomed passersby with a calm pause in the middle of the city’s energetic chaos. The bold and intense aroma of freshly brewed Robusta beans rose from personalized ceramic mugs, while the cafe was filled with the soft hum of conversations that never felt hurried. Founded in the 1940s, Madge Cafe is one of Iloilo's enduring heritage establishments. Started as a labor of love by the grandparents of the current owner, Mr. Peter Dela Cruz, this decades-old cafe has survived war, natural disasters, pandemics, and generations of change. Named after his grandmother, Magdalena – fondly called “Madge” – and with the pawikan logo to honor his grandfather who bore the same nickname, the cafe maintained its traditional coffee-making process of using the sock-filter brewing method. 
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+Madge Cafe primarily uses locally sourced Robusta coffee beans from Northern Iloilo, committed to supporting local coffee farmers and preserving the raw, natural taste of coffee – free from artificial additives and excessive sugar. Cultivated over decades, these time-honored methods were born out of passion and dedication in upholding the authentic flavors of Madge Cafe from modern, mass-produced coffee. 
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
-
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+Beyond the unique taste of coffee this cafe offers, it also embodies Ilonggo hospitality at their core. Customers are warmly welcomed, offering a space to pause and a connection to tradition. In Madge Cafe, each cup tells a story honoring past generations while inviting each visitor to savor the present. 
 `,
   };
 
@@ -208,39 +206,41 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/la-paz/paul-kaldi/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Your Taste at Heart Creates a Lasting Impact
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    In Iloilo, coffee has become more than a daily habit. It is a story...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    Jan 29 | La Paz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                {/* Article Recommendation 2 */}
+                <Link href="/news/city-proper/palpitate/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    Jan 31 | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                {/* Article Recommendation 3 */}
+                <Link href="/news/mandurriao/kyo-coffee/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    Kyo Coffee’s Japanese Precision in Local Beans
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    In the far southern part of Mandurriao, Kyo Coffee brings a different rhythm ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    Feb 01 | Mandurriao
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

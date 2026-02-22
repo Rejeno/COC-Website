@@ -4,32 +4,32 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Kyo Coffee and Its Brewing Local Pride',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Kyo/1.jpg', caption: 'Afternoon hues at Kyo Coffee featuring the signature Americano and matcha-infused ‘Bonsai’ blend.' },
+      { src: '/Kyo/2.jpg', caption: 'A careful preparation of a hot brew, served fresh and steaming.' },
+      { src: '/Kyo/3.jpg', caption: 'Bringing authentic Japanese style culture to the local coffee scene.' },
+      { src: '/Kyo/4.jpg', caption: 'Reading through the ‘wall of love’ at Kyo Coffee.' },
+      { src: '/Kyo/5.JPG', caption: 'Kyo Coffee’s signature Iced Americano and a sweet treat to match.' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/Kyo/1.jpg',
+    inlineImageCaption: 'Afternoon hues at Kyo Coffee featuring the signature Americano and matcha-infused ‘Bonsai’ blend.',
+    inlineImage2: '/Kyo/2.jpg',
+    inlineImage2Caption: 'A careful preparation of a hot brew, served fresh and steaming.',
+    author: 'Kelley Marie Matoy',
+    date: 'February 01, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: ' KLMB Building, Guzman Street, Hibao-an Sur, Mandurriao, Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/18BYC713e3/',
+    content: `In the far southern part of Mandurriao, Kyo Coffee brings a different rhythm from the city’s busy café scene, one that slows things down.What started as a pop-up during the Iloilo Specialty Coffee Fair in 2024, the café opened its physical store in the district and eventually created a brand of its own. Kyo Coffee focuses on three pillars: quality, sustainability, and traceability. It started as a passion project and grew into a specialty coffee space that offers quality flavors. For Kyo Coffee, being “specialty” is not just about high-grade beans, but also about responsible sourcing and mindful practices. 
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Kyo Coffee is deeply rooted in Japanese-inspired concepts that embraces the philosophy of slow coffee and mindful brewing. The owner draws inspiration from Japanese culture, where each cup is prepared with attention and respect for the process. This approach shapes not only their brewing methods but also the calm, minimalist atmosphere of the café, designed for quiet conversations, focused work, or a peaceful break from the busy city.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+Kyo Coffee also strongly supports local coffee farmers. The shop partners with local associations, including groups like the Pakiburak Association, to source beans responsibly. By advocating for farmers and prioritizing sustainability, Kyo ensures that quality coffee begins at the source. This connection to producers reflects a wider belief in community over competition within the local coffee industry.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+Their menu highlights the natural flavors of its beans through pour-over coffees, and as well as their carefully brewed Americano that showcases distinct tasting notes. For those seeking something unique, their signature drink Bonsai blends coffee and matcha without milk, creating a bold yet balanced fusion.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+Kyo Coffee welcomes students, professionals, and families alike, offering not just drinks, but a calm and thoughtful coffee experience meant to be savored. With the goal of meeting each customer’s balance of taste and comfort, Kyo Coffee continues to grow with genuine care and service leaving a lasting impression long after the last sip. 
 `,
   };
 
@@ -208,39 +208,41 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/city-proper/LoCo/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    LoCo Coffee and Its Brewing Local Pride
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    LoCo Coffee, short for “Local Coffee,” serves as a modern bridge between ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    Jan 30 | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                 {/* Article Recommendation 2 */}
+                <Link href="/news/lapaz/Madge/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    Traditional Taste Crafted Through Decades of Passion
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    Caught in a chaotic loop where people crave for a faster pace of life ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    Jan 30 | La Paz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                 {/* Article Recommendation 3 */}
+                <Link href="/news/villa/iloilo-coffee-house/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    Symphony of Flavors, Crafted in Iloilo Coffee House 
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    Like a well-composed symphony, coffee is all about balance. Crafted  ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    Jan 22 | Villa
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

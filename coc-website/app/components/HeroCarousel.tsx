@@ -3,8 +3,13 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
+export interface CarouselImage {
+  src: string;
+  caption?: string;
+}
+
 interface HeroCarouselProps {
-  images: string[];
+  images: CarouselImage[];
   title: string;
 }
 
@@ -28,12 +33,9 @@ export default function HeroCarousel({ images, title }: HeroCarouselProps) {
   };
 
   return (
-    // CHANGED: 
-    // - aspect-[4/3] for taller images on mobile
-    // - lg:aspect-[2/1] adds a little more height on desktop compared to the previous 21/9
     <div className="relative w-full overflow-hidden rounded-[38px] aspect-[4/3] lg:aspect-[2/1] group">
       {/* Images */}
-      {images.map((src, index) => (
+      {images.map((imgData, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
@@ -41,16 +43,25 @@ export default function HeroCarousel({ images, title }: HeroCarouselProps) {
           }`}
         >
           <Image
-            src={src}
+            src={imgData.src}
             alt={`${title} - Slide ${index + 1}`}
             fill
             className="object-cover"
             priority={index === 0}
           />
+          
+          {/* Caption Overlay */}
+          {imgData.caption && (
+            <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 via-black/70 to-transparent pt-20 pb-14 lg:pb-16 px-6 md:px-16 text-center">
+              <p className="text-white text-[14px] md:text-lg lg:text-2xl italic font-light tracking-wide drop-shadow-md">
+                {imgData.caption}
+              </p>
+            </div>
+          )}
         </div>
       ))}
 
-      {/* Overlay Gradient */}
+      {/* Global Overlay Gradient */}
       <div className="absolute inset-0 bg-black/10 z-10 pointer-events-none" />
 
       {/* Left Arrow */}

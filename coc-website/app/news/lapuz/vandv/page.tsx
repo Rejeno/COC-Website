@@ -4,32 +4,31 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Home Brewed with Love at V&V Coffee',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/V&V/1.jpg', caption: ' Keeping it simple and local. Only at V&V coffee' },
+      { src: '/V&V/2.jpg', caption: ' Three ways to cool down. A cold Americano, a not too sweet caramel macchiato and a balanced hazelnut drink' },
+      { src: '/V&V/3.jpg', caption: ' Pour over, mixing with care, a cold cup of americano being made by the owner' },
+      { src: '/V&V/4.jpg', caption: ' The tools behind a flavorful brewed coffee' },
+      { src: '/V&V/5.JPG', caption: ' A warm and inviting spot that feels like a hidden gem in your neighborhood' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/V&V/1.jpg',
+    inlineImageCaption: ' Keeping it simple and local. Only at V&V coffee',
+    inlineImage2: '/V&V/5.jpg',
+    inlineImage2Caption: 'A warm and inviting spot that feels like a hidden gem in your neighborhood',
+    author: 'Leigh Diane Mandado',
+    date: 'January 21, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: ' Zone 4, Alalasan, Lapuz, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/1AyUKEWrFS/',
+    content: `In every cup of coffee, there is a story. For some, it’s about comfort, and for others, it’s about livelihood. But for Merv Deocampo, the owner of V&V Coffee, it’s about transformation. What began as years as a barista, brewing coffee for others, eventually became his foundation for building a café of his own.  For six years, Merv worked as a barista. Those years were filled with long shifts, countless cups brewed with care, and lessons that shaped him into a senior specialist in the craft. Coffee became his comfort, his energy, and eventually, his happiness. With all the experience in hand and the full support of his family, he finally found the courage to take a leap of faith and build something of his own.
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+    Beginning humbly at home, it slowly grew into the warm, homey space that V&V Coffee has today. Inspired by his grandparents, he named it after Vilma and Vilda, which carries a deep meaning and a love for his roots.  That sense of family is woven into the café’s atmosphere, a welcoming and cozy space filled with the kind of warmth that makes guests feel at home. Students often flock to the shop, finding it the perfect spot to relax after school. Its inviting vibe makes it a place where people gather, unwind, and feel a sense of belonging. The café serves a variety of drinks made from locally sourced beans, offering quality without sacrificing affordability. It’s a hidden gem for those who want to explore Iloilo’s growing coffee culture in a relaxed and approachable way.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+    But beyond the coffee, what truly sets V&V Coffee apart is its spirit of community. The friendly faces that will greet you while walking towards the shop, the warm interactions that fill the space, and Merv himself welcome every guest with kindness. Each visit becomes a meaningful experience, a reminder that coffee, at its best, is not all about a drink but can be a sense of connection.
+        	
+    From being a barista to owner, Merv’s story is an inspiring example that hard work and passion can be brewed into something extraordinary, and every cup carries not just a simple flavor but the journey of a man who dared to dream.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
-
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
 `,
   };
 
@@ -208,15 +207,15 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Cozy Escape at Arias Burger and Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    The rich scent of freshly brewed locally-sourced beans is enough...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    14 days ago | Lapuz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

@@ -4,32 +4,33 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Cozy Escape at Arias Burger and Coffee',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/ARIA_S/1.jpg', caption: 'Welcoming vibes from the moment you hit the wood wall of Aria\'s Burger and Coffee' },
+      { src: '/ARIA_S/2.jpg', caption: 'Escaping from the rush, a greenery spot perfect for unwinding with your favorite drink' },
+      { src: '/ARIA_S/3.jpg', caption: 'Behind the brew is the most satisfying part of the wait' },
+      { src: '/ARIA_S/4.jpg', caption: 'Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo' },
+      { src: '/ARIA_S/5.JPG', caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/ARIA_S/4.jpg',
+    inlineImageCaption: ' Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo',
+    inlineImage2: '/ARIA_S/5.jpg',
+    inlineImage2Caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer',
+    author: 'Leigh Diane Mandado',
+    date: 'January 21, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: '  PH4Q+GHP Loboc, Lapuz, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/17xWyKmgo1/',
+    content: `Far from the rush of Iloilo’s busy streets, Arias Burger and Coffee offers a refreshing retreat where comfort food and café culture meet. It’s the kind of place that feels like pressing a pause button, welcoming their guests with burgers, freshly brewed coffee, and an atmosphere made for slowing down and savoring the moment.
+    
+    
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+    Part of the café’s charm lies in its thoughtfully designed space. Upstairs, guests can settle into a cozy spot surrounded by touches of greenery, with the soft sound of birds chirping nearby adding a hint of nature to the experience. It’s an ideal setting for quiet conversations, study sessions, or simply spending slow time alone. Downstairs, the café comes alive with gentle background music, the warm aroma of coffee filling the air as each cup is carefully prepared.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+    The rich scent of freshly brewed locally-sourced beans is enough to draw anyone in, while the flavors reflect the café’s commitment to quality. Pairing their drinks with Arias’ signature burgers makes for a satisfying experience, one that appeals to students, businesspeople, young professionals, and families alike. The menu strikes a balance between indulgence and comfort, offering food that feels familiar yet thoughtfully crafted.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+    What truly sets Arias Burger and Coffee apart is its ability to create a sense of escape. Beyond the food and drinks, it offers a welcoming space that values relaxation and presence. Every visit feels unhurried, as if the café invites you to stay just a little longer. Arias is perfect for those seeking both flavor and atmosphere, proving that the good cafés are often the ones that make you feel most at home.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
 `,
   };
 
@@ -208,15 +209,27 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Home Brewed with Love at V&V Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    13 days ago | Jaro
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Palpitate Coffee Where the Rush Slows Down
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    2 hrs ago | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -229,18 +242,6 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     10 days ago | Jaro
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

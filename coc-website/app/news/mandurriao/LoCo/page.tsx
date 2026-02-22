@@ -4,32 +4,27 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'LoCo Coffee and Its Brewing Local Pride',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Loco/1.jpg', caption: 'Enjoying a warm brew in the signature LoCo mug.' },
+      { src: '/Loco/2.jpg', caption: 'The art of the hand-brewed coffee at LoCo.' },
+      { src: '/Loco/3.jpg', caption: 'TA warm glow in the evening at Local Coffee (LoCo).' },
+      { src: '/Loco/4.jpg', caption: 'Creamy perfection in this Iced Creme Brulee Latte.' },
+      { src: '/Loco/5.JPG', caption: 'There distinct ways to enjoy a great cup of coffee at Local Coffee (LoCo).' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/Loco/1.jpg',
+    inlineImageCaption: 'Enjoying a warm brew in the signature LoCo mug.',
+    inlineImage2: '/Loco/2.jpg',
+    inlineImage2Caption: 'The art of the hand-brewed coffee at LoCo.',
+    author: 'Kelley Marie Matoy',
+    date: 'January 30, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
-
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
-
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
-
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
-
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+    location: 'San Jose St., Smallville Complex, San Rafael, Mandurriao, Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/1JdhbfSBtM/',
+    content: `LoCo Coffee, short for “Local Coffee,” serves as a modern bridge between traditional Ilonggo coffee and the younger generation. The name is simple and easy to remember, reflecting the café’s clear mission. It was inspired by the owner’s first taste of native coffee in Iloilo, which was rich, smooth, and nothing like the blends they were used to while working in Manila. That experience led to a goal: while most cafes served locally sourced coffee for the older generation, LoCo wanted to introduce and resonate with the Gen Zs.
+LoCo has been committed to adopting Panay-grown beans. The café uses 100% Robusta coffee sourced directly from farmers in towns such as Calinog, Leon, Sibalom, and Banate. By working closely with local producers and roasting in-house, LoCo supports sustainable livelihoods while also reducing the environmental impact of imported beans. The café also challenges the common belief that Arabica is superior, proving that Robusta, when carefully grown and prepared, can deliver bold and enjoyable flavors.
+Innovation plays a key role in making local coffee more approachable. Instead of relying solely on traditional brewing, LoCo uses a cold-brew method, steeping coffee for a certain number of hours to produce a smoother, less acidic drink. One of its bestsellers, Bugtaw, combines a cold brew and high-quality condensed milk, which highlights how simple ingredients can create a well-loved signature. 
+Beyond the drinks, LoCo’s industrial-minimalist space in Smallville Complex offers a relaxed and welcoming atmosphere. Students, young professionals, and families gather here not just for coffee, but for connection. Over the years, the café has hosted creative events and milestones, becoming a familiar neighborhood space where conversations and memories are made. 
 `,
   };
 
@@ -208,39 +203,41 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/city-proper/palpitate/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    Jan 31 | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                 {/* Article Recommendation 2 */}
+                <Link href="/news/lapaz/Madge/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    Traditional Taste Crafted Through Decades of Passion
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    Caught in a chaotic loop where people crave for a faster pace of life ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    Jan 30 | La Paz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                 {/* Article Recommendation 3 */}
+                <Link href="/news/villa/glory/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    The Living Legacy of 3rd Gen Glory’s Cafe
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    Change drifts steadily within the silent stream of time. It moves ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    Jan 22 | Villa
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

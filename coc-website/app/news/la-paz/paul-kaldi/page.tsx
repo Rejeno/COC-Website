@@ -4,32 +4,34 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Your Taste at Heart Creates a Lasting Impact',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/paul-kaldi/1.jpg', caption: 'A caramel latte with a twist: a dash of Himalayan salt to balance the sweetness.' },
+      { src: '/paul-kaldi/2.jpg', caption: 'Freshly brewed Pink Salt Caramel Latte from Paul Kaldi.' },
+      { src: '/paul-kaldi/3.jpg', caption: 'The sweet aroma of freshly brewed Arabica coffee beans.' },
+      { src: '/paul-kaldi/4.jpg', caption: 'Behind the scenes at Paul Kaldi Coffee.' },
+      { src: '/paul-kaldi/5.JPG', caption: 'The Ube Cheese Crumble Muffin that goes better with it.' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/paul-kaldi/1.jpg',
+    inlineImageCaption: 'A caramel latte with a twist: a dash of Himalayan salt to balance the sweetness.',
+    inlineImage2: '/paul-kaldi/2.jpg',
+    inlineImage2Caption: 'Freshly brewed Pink Salt Caramel Latte from Paul Kaldi.',
+    author: 'Trixie Aurelia Ningas',
+    date: 'January 29, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: 'West Visayas State University, Luna St, La Paz, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/172Zo3fiTG/',
+    content: `In Iloilo, coffee has become more than a daily habit. It is a story of a community devoted to transforming every cup into a meaningful experience. And not all coffee drinkers crave the same taste. It varies from person to person shaped by their habits, moods, and personal preference. While some prefer the bold and intense kick of Robusta, others lean toward the smoother and aromatic notes of Arabica. What sets Paul Kaldi Coffee apart is that coffee begins with a choice. They allow their customers to choose the beans that best match their taste, creating a coffee experience that feels personal rather than standardized. 
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Recently, Paul Kaldi Coffee expanded their menu with Pink Salt Caramel Latte, a rich and creamy caramel latte made with Arabica beans but with a twist: a hint of pink salt. This latte blends rich, smooth espresso with sweet, buttery caramel. The natural sweetness and aromatic notes of Arabica enhances the caramel’s indulgence, while the Himalayan Pink Salt adds a subtle, savory touch creating a perfectly balanced and irresistible flavor experience. 
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+Though Paul Kaldi Coffee is a cafe that serves good coffee for everyone’s preference, it also stands as a social enterprise where every cup is furnished with care, sustainability, and community impact – building meaningful connections between local farmers and coffee drinkers. For the owner, Mr. Peter Paul Dayanan, coffee is deeply personal. Roasting the beans is not just part of the process, rather it is a source of motivation and stress relief. Yet, the establishment of Paul Kaldi Coffee is not just out of his passion but extends beyond personal fulfillment as coffee also represents livelihood – for local coffee farmers who are often overlooked in the supply chain.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+It began with an initiative to support local coffee farmers in the height of the Covid-19 pandemic in 2021. And that simple act of support turned into an opportunity, marking the birth of Paul Kaldi’s Locally Sourced Department. Today, Paul Kaldi covers the entire coffee chain – from sourcing beans directly from farmers, roasting them, brewing, and supplying 15 coffee shops across Iloilo.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+With Paul Kaldi’s slogan “Local Farmers at Our Core, Your Taste at Our Heart”, it reflects the cafe’s mission of prioritizing quality, taste preference and hospitality. Customers can personalize their drinks – choosing sugar levels, milk blends, and roast profiles – to match their taste. From affordable brewed coffee at Del Carmen to premium specialty drinks at the 2nd floor Coop Building in West Visayas State University, the cafe serves all classes of society. 
+	
+Success for this cafe is not measured by profit but by impact. Supporting more farmers across Iloilo towns and continue building a business that serves the people is the vision. At its heart, Paul Kaldi is more than just a place to drink coffee. It is a bridge between farmers, customers and a community growing together – one cup at a time. 
 `,
   };
 
@@ -208,39 +210,41 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/mandurriao/LoCo" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    LoCo Coffee and Its Brewing Local Pride
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    LoCo Coffee, short for “Local Coffee,” serves as a modern bridge ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    Jan 30 | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                 {/* Article Recommendation 2 */}
+                <Link href="/news/lapaz/Madge/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    Traditional Taste Crafted Through Decades of Passion
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    Caught in a chaotic loop where people crave for a faster pace of life ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    Jan 30 | La Paz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                 {/* Article Recommendation 3 */}
+                <Link href="/news/villa/glory/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                   The Living Legacy of 3rd Gen Glory’s Cafe
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    Change drifts steadily within the silent stream of time. It moves...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    Jan 22| Villa
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

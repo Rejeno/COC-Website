@@ -4,32 +4,31 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'Brewing Passion at Yield Specialty Coffee',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/THE-YIELD/1.jpg', caption: 'A hot americano to start your day' },
+      { src: '/THE-YIELD/2.jpg', caption: 'Warmth in a cup almost too pretty to drink' },
+      { src: '/THE-YIELD/3.jpg', caption: 'A home away from home vibe that let\'s you pause a little' },
+      { src: '/THE-YIELD/4.jpg', caption: 'Witnessing the care behind every cup' },
+      { src: '/THE-YIELD/5.JPG', caption: ' Proudly local, the true taste of Iloilo\'s coffee culture' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/THE-YIELD/5.jpg',
+    inlineImageCaption: ' Proudly local, the true taste of Iloilo\'s coffee culture',
+    inlineImage2: '/THE-YIELD/3.jpg',
+    inlineImage2Caption: 'A home away from home vibe that let\'s you pause a little',
+    author: 'Leigh Diane Mandado',
+    date: 'February 1, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: ' Lopez-Jaena St, Democracia St, Jaro, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/theyieldspecialtycoffee?mibextid=rS40aB7S9Ucbxw6v',
+    content: `Every great story begins with a spark. It can be a dream for others, but for some, it might be an opportunity that changes everything. In 2014, a door opened for Noi Dongor. He was offered the chance to distribute Allegro Beverages in Panay, one of the biggest coffee solutions providers in the Philippines. For him, it wasn’t just business but served to begin a journey in the coffee industry
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+ From there, Noi ventured into opening coffee shops across Iloilo, each one becoming a stepping stone toward something greater. His vision expanded into Kape Iloilo, a social enterprise that buys beans directly from local farmers. But it wasn’t only about trade. Farmers were trained, guided, and empowered to produce quality coffee that could stand proudly on its own.
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+ By 2017, Yield Specialty Coffee was born. Its beans were sourced mostly from Igbaras, carrying the richness of Iloilo’s soil. A cup of their black coffee is likely 100% Arabica, smooth and bold, while their milk-based drinks blend Arabica with Iloilo robusta, creating flavors that are both familiar and distinct. Yield quickly became a haven for its customers. Businesspeople found convenience in its easy parking and quiet corners for meetings. Young professionals and students discovered a welcoming space to study, work, or simply pause. Iloilo’s coffee culture has been growing fast, embracing espresso machines, pour-over, and cold brews. Yield stands at the heart of this movement, a place where tradition meets innovation.
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+ For Noi, coffee is more than a livelihood. It is a friend, a comfort zone, and a source of inspiration. It has given him connections, influence, and the honor of serving as president of the Philippine Coffee Board Inc., a role that carries weight across the nation. Coffee has taken him to places he never imagined, and through it all, he is rooted to his passion. At Yield Specialty Coffee, every cup tells this story of beginnings, community, and a man whose life has been brewed with purpose.
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
 `,
   };
 
@@ -208,27 +207,15 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/jaro/cafe-nahum" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Finding Comfort at Cafe Nahum
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                     Cafe Nahum takes pride in highlighting locally sourced coffee beans through...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    11 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -241,6 +228,18 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     9 days ago | Molo
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Home Brewed with Love at V&V Coffee
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    13 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

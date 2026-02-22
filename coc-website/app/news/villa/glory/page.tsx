@@ -4,32 +4,32 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Palpitate Coffee Where the Rush Slows Down',
+    title: 'The Living Legacy of 3rd Gen Glory’s Cafe',
     heroImages: [
-      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
-      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
-      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/3rd-gen/1.jpg', caption: 'A carefully crafted blend at 3rd Gen Glory’s Cafe.' },
+      { src: '/3rd-gen/2.jpg', caption: 'The third generation trademark of Glory’s Cafe.' },
+      { src: '/3rd-gen/3.jpg', caption: 'Traditional coffee brews made with premium robusta coffee beans.' },
+      { src: '/3rd-gen/4.jpg', caption: 'Lavish aesthetics and modernized interior, yet steeped in nostalgia and Ilonggo culture.' },
+      { src: '/3rd-gen/5.JPG', caption: 'The DIY coffee grinding corner.' }
     ],
-    inlineImage: '/Palpitate/1.jpg',
-    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
-    inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
-    author: 'Kelley Marie Matoy ',
-    date: 'January 31, 2026',
+    inlineImage: '/3rd-gen/1.jpg',
+    inlineImageCaption: 'A carefully crafted blend at 3rd Gen Glory’s Cafe',
+    inlineImage2: '/3rd-gen/2.jpg',
+    inlineImage2Caption: 'The third generation trademark of Glory’s Cafe.',
+    author: 'Trixie Aurelia Ningas',
+    date: 'January 22, 2026',
     readTime: '5 mins read',
-    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
-    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
+    location: ' Quezon Street Villa Arevalo, Iloilo City 5000 Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/1CsKvZGFVs/',
+    content: `Change drifts steadily within the silent stream of time. It moves without pause, carrying memorable moments along its current. Like coffee slowly brewing, change seeps quietly. Subtle at first, yet profound in its depth. 
 
-Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
+Despite its lavish aesthetics and modernized interior, plush sofa chairs and vintage tables, 3rd Gen Glory’s Cafe offers an atmosphere steeped in nostalgia and Ilonggo culture. Seamlessly blending contemporary comfort with echoes of the past, evoking warm memories of heritage homes and timeless local traditions. Every corner honors the past, presenting history as something worth remembering by. The cafe's ambiance invites tourists and locals alike not just for the coffee it offers but also for the experience rooted in place, memory and identity. It creates a setting that feels both refined and intimately familiar, as though time itself has chosen to linger. 
 
-Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
+Established in 1948, 3rd Gen Glory’s Cafe traces its roots to Iloilo Central Market, where it first served native coffee brews using traditional methods. In those early days, the cafe catered to people who were drawn together by their shared love for coffee. It became a humble corner where stories were exchanged and days quietly unfolded. Today, it is located along Quezon Street in Villa Arevalo and continues to carry the legacy passed on to their third generation of management. 
 
-The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
+Among the cafe’s selections, the Mild Black Coffee still has a kick to it despite its ⅔ portion of coffee. Made with Premium Robusta coffee beans sourced from Dingle, it reflects the distinct character of 3rd Gen Glory’s Cafe and its dedication to quality and authenticity in flavor. Extending their commitment beyond taste, they also support local coffee farmers and promote the richness of Ilonggo coffee farms perceiving it as a responsibility – one that sustains livelihoods and strengthens community ties. 
 
-As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+What truly sets 3rd Gen Glory’s Cafe apart is its unwavering commitment to tradition. At its core, it remains a traditional cafe. One that values heritage over fleeting trends. While it welcomes modern tastes and a new generation of customers, especially tourists seeking an authentic local experience, it never loses sight of where it came from.
 `,
   };
 
@@ -208,39 +208,41 @@ As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a rem
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                <Link href="/news/mandurriao/kyo-coffee/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing stories at Iloilo Coffee Studio
+                    Kyo Coffee’s Japanese Precision in Local Beans
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     At the heart of Coffee Studio’s identity is its commitment to ...
+                    In the far southern part of Mandurriao, Kyo Coffee brings a different rhythm ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    12 days ago | City Proper
+                    Jan 01 | Villa
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                 {/* Article Recommendation 2 */}
+                <Link href="/news/villa/glory/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    Symphony of Flavors, Crafted in Iloilo Coffee House 
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    Like a well-composed symphony, coffee is all about balance. Crafted...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    Jan 22 | Villa
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                 {/* Article Recommendation 3 */}
+                <Link href="/news/city-proper/palpitate/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    A Timeless Taste of Ilonggo Comfort
+                    Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    9 days ago | Molo
+                    Jan 31 | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
