@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className={`${montserrat.className} flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-0`}>
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              14
+              13
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Visited Cafes
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              14
+              13
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Coffee Blogs
@@ -59,7 +59,7 @@ export default function AboutPage() {
 
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-brand-green">
-              4
+              3
             </p>
             <p className="mt-3 text-base  md:text-xl font-medium text-brand-dark">
               Blog Contributors
@@ -123,28 +123,9 @@ export default function AboutPage() {
               </p>
 
               <div className="mt-6 flex gap-4">
-                <a href="#" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                <a href="https://www.facebook.com/share/1GDCmT5FCi/" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="Instagram" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="X" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="LinkedIn" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect width="4" height="12" x="2" y="9"/>
-                    <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
               </div>
@@ -180,28 +161,9 @@ export default function AboutPage() {
               </p>
 
               <div className="mt-6 flex gap-4">
-                <a href="#" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                <a href="https://www.facebook.com/share/1BDZLR1Mey/" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="Instagram" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="X" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="LinkedIn" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect width="4" height="12" x="2" y="9"/>
-                    <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
               </div>
@@ -237,33 +199,168 @@ export default function AboutPage() {
               </p>
 
               <div className="mt-6 flex gap-4">
-                <a href="#" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                <a href="https://www.facebook.com/share/1AAirUj4TC/" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="Instagram" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="X" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                  </svg>
-                </a>
-                <a href="#" aria-label="LinkedIn" className="text-brand-dark hover:text-brand-green transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                    <rect width="4" height="12" x="2" y="9"/>
-                    <circle cx="4" cy="4" r="2"/>
                   </svg>
                 </a>
               </div>
             </div>
           </div>
+        </div>
+        <div className="grid mb-40 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 mt-10 lg:mt-10">
+          {/* Card 1 */}
+          <div className="
+            overflow-hidden rounded-[36px] bg-white shadow-lg
+            transition-all duration-300 ease-out
+            hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
+            group
+          ">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
+              <Image
+                src="/Developers/Regino.JPG"
+                alt="Regino"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 20%' }}
+              />
+            </div>
+
+            <div className="p-6 lg:p-8">
+              <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
+                Regino Balogo Jr.
+              </h3>
+              <p className="mt-1 text-base text-brand-light-gray">
+                Lead Developer
+              </p>
+
+              <div className="mt-6 flex gap-4">
+                <a href="https://www.facebook.com/regino.balogo.jr" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 */}
+          <div className="
+            overflow-hidden rounded-[36px] bg-white shadow-lg
+            transition-all duration-300 ease-out
+            hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
+            group
+          ">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
+              <Image
+                src="/Developers/Encanto.jpg"
+                alt="Mark"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 20%' }}
+              />
+            </div>
+
+            <div className="p-6 lg:p-8">
+              <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
+                Mark Andrei Encanto
+              </h3>
+              <p className="mt-1 text-base text-brand-light-gray">
+                Lead UI/UX Designer and Developer
+              </p>
+
+              <div className="mt-6 flex gap-4">
+                <a href="https://www.facebook.com/markndrei/" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+            <div className="
+            overflow-hidden rounded-[36px] bg-white shadow-lg
+            transition-all duration-300 ease-out
+            hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
+            group
+          ">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
+              <Image
+                src="/Developers/Gumacal.JPG"
+                alt="Trixie"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                // Custom position: 0% X-axis (left/center), 25% Y-axis (slightly down from top)
+                // This skips the empty white space at the very top but keeps the head in view.
+                style={{ objectPosition: 'center 20%' }}
+              />
+            </div>
+
+            <div className="p-6 lg:p-8">
+              <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
+                Rhazel Jay Gumacal
+              </h3>
+              <p className="mt-1 text-base text-brand-light-gray">
+                Developer and Assets Director
+              </p>
+
+              <div className="mt-6 flex gap-4">
+                <a href="https://www.facebook.com/wracell1001" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div className="flex justify-center mb-40 mt-10">
+        <div className="w-full max-w-sm">
+          {/* Card 1 */}
+          <div className="
+            overflow-hidden rounded-[36px] bg-white shadow-lg
+            transition-all duration-300 ease-out
+            hover:scale-[1.04] hover:-translate-y-2 hover:shadow-2xl
+            group
+          ">
+            <div className="relative w-full aspect-3/4 lg:aspect-auto lg:h-96 transition-transform duration-500 group-hover:scale-105">
+              <Image
+                src="/Consultant/Rica.jpg"
+                alt="Regino"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover"
+                style={{ objectPosition: 'center 20%' }}
+              />
+            </div>
+
+            <div className="p-6 lg:p-8">
+              <h3 className="text-2xl lg:text-[28px] font-bold text-brand-dark">
+                Prof. Rica Marcet O. Funtecha
+              </h3>
+              <p className="mt-1 text-base text-brand-light-gray">
+                Consultant
+              </p>
+
+              <div className="mt-6 flex gap-4">
+                <a href=" https://www.facebook.com/share/1AkSAzDLkF/" aria-label="Facebook" className="text-brand-dark hover:text-brand-green transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
     </main>
