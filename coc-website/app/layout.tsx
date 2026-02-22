@@ -65,7 +65,7 @@ export default function RootLayout({
                   <div className="flex items-center gap-3">
                     <div className=" relative w-12 h-12">
                       <Image
-                        src="/logo.png"
+                        src="/logoFinalWhite.png"
                         alt="Caffeinated Spaces Logo"
                         fill
                         className="object-contain"
@@ -77,7 +77,7 @@ export default function RootLayout({
                   </div>
                   
                   <p className="text-sm md:text-base leading-relaxed opacity-90 max-w-md">
-                    Caffeinated Spaces is a website created by journalism students to explore and celebrate the evolving coffee culture in Iloilo City.
+                    Caffeinated Spaces is a website created by journalism students from West Visayas State University to explore and celebrate the evolving coffee culture in Iloilo City.
                   </p>
 
                   <div className="flex items-center gap-4">

@@ -13,6 +13,9 @@ export default function ArticlePage() {
       '/CStudio/5.JPG'
     ],
     inlineImage: '/CStudio/4.jpg',
+    inlineImageCaption: 'The cozy interior of Iloilo Coffee Studio, where vintage cameras and vinyl records set the scene for a unique coffee experience.',
+    inlineImage2: '/CStudio/2.jpg',
+    inlineImage2Caption: 'Locally sourced beans take center stage at Coffee Studio, celebrating Iloilo\'s thriving coffee culture from farm to cup.',
     author: 'Leigh Diane Mandado',
     role: 'Article Author',
     avatar: '/Authors/leigh.jpg',
@@ -20,18 +23,21 @@ export default function ArticlePage() {
     readTime: '3 mins read',
     location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
     facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it’s a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it’s a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
 
-    At the heart of Coffee Studio’s identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo’s coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
 
     The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you’re drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
+
+  // Index at which to show the second inline image (left-floated, bottom section)
+  const secondInlineIndex = paragraphs.length - 1;
 
   return (
     <article className="min-h-screen bg-white">
@@ -51,7 +57,6 @@ export default function ArticlePage() {
 
       {/* Hero Carousel Component */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
-        {/* CHANGED: aspect-[4/3] for mobile (taller), aspect-[21/9] for desktop */}
         <div className="w-full aspect-[4/3] lg:aspect-[21/9] overflow-hidden rounded-[38px]">
            <HeroCarousel images={article.heroImages} title={article.title} />
         </div>
@@ -59,7 +64,6 @@ export default function ArticlePage() {
 
       {/* Title + CTA */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-16">
-        {/* CHANGED: flex-row on mobile to put icon next to title */}
         <div className="flex flex-row flex-wrap lg:flex-nowrap items-start justify-between gap-4 lg:gap-0">
           
           <div className="flex-1 max-w-[85%] lg:max-w-[880px]">
@@ -70,7 +74,6 @@ export default function ArticlePage() {
 
           {/* Social Icon Section */}
           <div className="flex flex-col items-end lg:items-end gap-3 mt-1 lg:mt-4 shrink-0">
-            {/* CHANGED: Hidden on mobile, visible on large screens */}
             <p className="hidden lg:block text-xl font-semibold text-brand-gray">
               Follow our Facebook Page
             </p>
@@ -134,16 +137,38 @@ export default function ArticlePage() {
             <div className="flex-grow">
               {paragraphs.map((para, i) => (
                 <div key={i}>
-                  {/* INLINE IMAGE LOGIC */}
+                  {/* FIRST INLINE IMAGE — floats right, after paragraph index 1 */}
                   {i === 1 && (
-                    <div className="relative w-full h-[250px] mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:h-[350px] lg:float-right rounded-2xl overflow-hidden">
-                      <Image 
-                        src={article.inlineImage}
-                        alt="Inline content image"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+                    <figure className="mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:float-right">
+                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                        <Image 
+                          src={article.inlineImage}
+                          alt="Inline content image"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
+                        {article.inlineImageCaption}
+                      </figcaption>
+                    </figure>
+                  )}
+
+                  {/* SECOND INLINE IMAGE — floats left, before last paragraph */}
+                  {i === secondInlineIndex && (
+                    <figure className="mb-6 lg:mb-4 lg:mr-8 lg:w-[45%] lg:float-left">
+                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                        <Image 
+                          src={article.inlineImage2}
+                          alt="Second inline content image"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                      <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
+                        {article.inlineImage2Caption}
+                      </figcaption>
+                    </figure>
                   )}
                   
                   <p className="mb-6 text-base lg:text-lg leading-relaxed text-justify tracking-wide">
@@ -151,6 +176,9 @@ export default function ArticlePage() {
                   </p>
                 </div>
               ))}
+
+              {/* Clear floats after all paragraphs */}
+              <div className="clear-both" />
             </div>
 
             {/* Location Section */}
@@ -214,7 +242,7 @@ export default function ArticlePage() {
                     Palpitate Coffee Where the Rush Slows Down
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands ...
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     2 hrs ago | City Proper

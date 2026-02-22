@@ -34,8 +34,8 @@ export default function Hero() {
         {/* TEXT CONTENT */}
         <div className="relative z-10 space-y-6 max-w-5xl">
           <h1 className={`${montserrat.className} text-4xl sm:text-5xl md:text-8xl text-brand-brown font-normal leading-tight`}>
-            <span className="block md:whitespace-nowrap">Strong Coffee.</span>
-            <span className="block md:whitespace-nowrap">Strong Opinions.</span>
+            <span className="block md:whitespace-nowrap">Savor the Story</span>
+            <span className="block md:whitespace-nowrap">Behind Every Cup</span>
           </h1>
 
           <Link href="/news">
