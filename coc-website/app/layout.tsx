@@ -82,40 +82,43 @@ export default function RootLayout({
                     Caffeinated Spaces is a website created by journalism students from West Visayas State University to explore and celebrate the evolving coffee culture in Iloilo City.
                   </p>
 
-                  {/* Facebook */}
-                  <div className="flex items-center gap-4">
-                    <a href="#" className="text-white hover:text-[#6D7E5E] transition-colors">
-                      <svg className="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+                  {/* CHANGED: Facebook & QR Code in one flex row */}
+                  {/* Added ml-4 md:ml-8 to push the QR code more towards the center */}
+                  <div className="flex flex-row items-center gap-8 ml-4 md:ml-8 lg:ml-1 mt-2">
+                    
+                    {/* Facebook Icon */}
+                    <a href="https://www.facebook.com/share/15wT3dGj15/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#6D7E5E] transition-colors">
+                      <svg className="h-12 w-12" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                       </svg>
                     </a>
-                  </div>
 
-                  {/* QR Code */}
-                  <div className="flex flex-col items-start w-[112px] gap-2">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfM5y-AjmkBv5Uap4TtiLfQpyfvRZ8fWOyJ0_HTsfIy_zQK0Q/viewform?fbclid=IwY2xjawP8Ee5leHRuA2FlbQIxMABicmlkETFxZ0tSQzFsSGEzRUowMUs5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHhTHgCJ2wuNKYhOtf45PL9Z4yLvHirTmLnkQLkAQVwUOBKjUU8kwjukdzUBf_aem_qg5g4EU_EB0jFsboBE1rGg"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex flex-col items-center group cursor-pointer"
-                    >
-                      <div className="overflow-hidden transition-opacity duration-200 group-hover:opacity-75">
-                        <Image
-                          src="/QR.png"
-                          alt="QR Code to Caffeinated Spaces"
-                          width={112}
-                          height={112}
-                          className="object-contain"
-                        />
-                      </div>
-                      <p className="text-xs w-[112px] text-center uppercase tracking-widest opacity-50 font-semibold group-hover:opacity-100 transition-opacity duration-200">
-                        Give us a Feedback
-                      </p>
-                    </a>
+                    {/* QR Code */}
+                    <div className="flex flex-col items-center ml-20 w-[82px] gap-2">
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfM5y-AjmkBv5Uap4TtiLfQpyfvRZ8fWOyJ0_HTsfIy_zQK0Q/viewform?fbclid=IwY2xjawP8Ee5leHRuA2FlbQIxMABicmlkETFxZ0tSQzFsSGEzRUowMUs5c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHhTHgCJ2wuNKYhOtf45PL9Z4yLvHirTmLnkQLkAQVwUOBKjUU8kwjukdzUBf_aem_qg5g4EU_EB0jFsboBE1rGg"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-col items-center group cursor-pointer"
+                      >
+                        <div className="overflow-hidden transition-opacity duration-200 group-hover:opacity-75">
+                          <Image
+                            src="/QR.png"
+                            alt="QR Code to Caffeinated Spaces"
+                            width={112}
+                            height={112}
+                            className="object-contain"
+                          />
+                        </div>
+                        <p className="text-xs w-[112px] text-center uppercase tracking-widest opacity-50 font-semibold group-hover:opacity-100 transition-opacity duration-200">
+                          Give us a Feedback
+                        </p>
+                      </a>
+                    </div>
                   </div>
 
                   {/* Back to Top */}
-                  <div className="flex justify-center md:justify-start">
+                  <div className="flex justify-start mt-4">
                     <BackToTop />
                   </div>
 
