@@ -25,14 +25,14 @@ export default function Navbar({ fontClass }: NavbarProps) {
       <div className="flex h-20 items-center justify-between">
         
         {/* 1. LEFT: Logo + Brand Name */}
-        <div className="flex items-center gap-3 z-20">
+        <div className="flex items-center gap-1 z-20">
           {/* LOGO IMAGE:
              - 'hidden': Hides it on mobile (default)
              - 'md:block': Shows it on tablet/desktop
           */}
-          <div className="hidden md:block relative w-15 h-15">
+          <div className="hidden md:block relative w-16 h-16">
             <Image
-              src="/logo.png"
+              src="/logoFinal.png"
               alt="Caffeinated Spaces Logo"
               fill
               className="object-contain"
