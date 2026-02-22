@@ -4,32 +4,32 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Brewing Passion at Yield Specialty Coffee',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/THE-YIELD/1.jpg', caption: 'A hot americano to start your day' },
+      { src: '/THE-YIELD/2.jpg', caption: 'Warmth in a cup almost too pretty to drink' },
+      { src: '/THE-YIELD/3.jpg', caption: 'A home away from home vibe that let\'s you pause a little' },
+      { src: '/THE-YIELD/4.jpg', caption: 'Witnessing the care behind every cup' },
+      { src: '/THE-YIELD/5.JPG', caption: ' Proudly local, the true taste of Iloilo\'s coffee culture' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
+    inlineImage: '/THE-YIELD/5.jpg',
+    inlineImageCaption: ' Proudly local, the true taste of Iloilo\'s coffee culture',
+    inlineImage2: '/THE-YIELD/3.jpg',
+    inlineImage2Caption: 'A home away from home vibe that let\'s you pause a little',
     author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    date: 'February 1, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: ' Lopez-Jaena St, Democracia St, Jaro, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/theyieldspecialtycoffee?mibextid=rS40aB7S9Ucbxw6v',
+    content: `Every great story begins with a spark. It can be a dream for others, but for some, it might be an opportunity that changes everything. In 2014, a door opened for Noi Dongor. He was offered the chance to distribute Allegro Beverages in Panay, one of the biggest coffee solutions providers in the Philippines. For him, it wasn’t just business but served to begin a journey in the coffee industry
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+ From there, Noi ventured into opening coffee shops across Iloilo, each one becoming a stepping stone toward something greater. His vision expanded into Kape Iloilo, a social enterprise that buys beans directly from local farmers. But it wasn’t only about trade. Farmers were trained, guided, and empowered to produce quality coffee that could stand proudly on its own.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+ By 2017, Yield Specialty Coffee was born. Its beans were sourced mostly from Igbaras, carrying the richness of Iloilo’s soil. A cup of their black coffee is likely 100% Arabica, smooth and bold, while their milk-based drinks blend Arabica with Iloilo robusta, creating flavors that are both familiar and distinct. Yield quickly became a haven for its customers. Businesspeople found convenience in its easy parking and quiet corners for meetings. Young professionals and students discovered a welcoming space to study, work, or simply pause. Iloilo’s coffee culture has been growing fast, embracing espresso machines, pour-over, and cold brews. Yield stands at the heart of this movement, a place where tradition meets innovation.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+ For Noi, coffee is more than a livelihood. It is a friend, a comfort zone, and a source of inspiration. It has given him connections, influence, and the honor of serving as president of the Philippine Coffee Board Inc., a role that carries weight across the nation. Coffee has taken him to places he never imagined, and through it all, he is rooted to his passion. At Yield Specialty Coffee, every cup tells this story of beginnings, community, and a man whose life has been brewed with purpose.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,39 +207,39 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                <Link href="/news/jaro/cafe-nahum" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Palpitate Coffee Where the Rush Slows Down
+                    Finding Comfort at Cafe Nahum
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                     Cafe Nahum takes pride in highlighting locally sourced coffee beans through...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
+                    11 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
+                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
+                    A Timeless Taste of Ilonggo Comfort
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
+                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Cozy Escape at Arias Burger and Coffee
+                    Home Brewed with Love at V&V Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    The rich scent of freshly brewed locally-sourced beans is enough...
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    14 days ago | Lapuz
+                    13 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

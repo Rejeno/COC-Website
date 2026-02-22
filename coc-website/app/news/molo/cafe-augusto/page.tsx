@@ -4,32 +4,34 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'A Timeless Taste of Ilonggo Comfort',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/CAugusto/1.jpg', caption: 'Warm tone and good vibes at Café Augusto' },
+      { src: '/CAugusto/2.jpg', caption: 'Savory, fresh, and cold brewed perfect for an afternoon chill' },
+      { src: '/CAugusto/3.jpg', caption: 'Café Augusto’s signature Brewed House Blend on ice!' },
+      { src: '/CAugusto/4.jpg', caption: 'Crisp galletas paired with a hot fresh brew' },
+      { src: '/CAugusto/5.JPG', caption: ' Retro calls and coffee sketches in the house' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
-    author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    inlineImage: '/CAugusto/1.jpg',
+    inlineImageCaption: 'Warm tone and good vibes at Café Augusto',
+    inlineImage2: '/CAugusto/2.jpg',
+    inlineImage2Caption: 'Savory, fresh, and cold brewed perfect for an afternoon chill',
+    author: 'Kelley Marie Matoy ',
+    date: 'February 1, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: 'Avanceña St, Molo, beside Panaderia de Molo & Phoenix Gas Station, Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/1Gi5n8ErvP/',
+    content: `Stepping into Café Augusto feels like walking into a familiar place. The space carries a simple, homey vibe inspired by classic Filipino-Spanish furnishings, focused on comfort and a welcoming environment for guests. It is a place rooted in family, tradition, and Ilonggo comfort food.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+Café Augusto began as a small café along the Esplanade 2 with the goal of serving all-day breakfast and traditional pancit molo. The café was opened by a couple who both come from families involved in the baking business. Its name is a tribute to the owner’s late grandfather, Augusto B. Villaluna, who supported their family’s catering and baking ventures. Upholding this legacy, the café continues to serve Ilonggo comfort food and merienda favorites to keep the culture and tradition alive.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+True to its mission of preserving Ilonggo food heritage, Café Augusto highlights family heirloom recipes and local delicacies. Their pancit molo, a local dish, reflects this commitment to tradition. When paired with their signature House Blend Brewed Coffee, it makes for a satisfying and balanced meal. The house blend, carefully curated by the café, offers a light and smooth flavor that is not too strong—ideal for beginners or those who prefer a gentler cup. Its subtle notes complement savory dishes like pancit molo without overpowering them, creating a comforting dining experience.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+Café Augusto uses a blend of local Robusta and imported Arabica beans, supporting local suppliers while maintaining quality. This balance mirrors their overall approach of honoring tradition while adapting to modern tastes. For them, venturing into the local business scene came with challenges, but adapting to trends and customer preferences has shaped the café into what it is today.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+Frequented by tourists and families who crave nostalgic flavors, Café Augusto continues to serve warm Ilonggo comfort food with heart. As Iloilo grows as a City of Gastronomy, the café aims to become a notable destination for local coffee, Ilonggo delicacies, and traditional heritage dishes—where every meal and cup is served with intention and the desire to bring back memories.
+
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,15 +209,15 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                <Link href="/news/molo/bruskoffee" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Palpitate Coffee Where the Rush Slows Down
+                    Coffee and Comfort in Your Neighborhood Brew
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                    Starting  from a small setup in a home garage, Bruskof...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
+                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -231,15 +233,15 @@ export default function ArticlePage() {
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Cozy Escape at Arias Burger and Coffee
+                    Home Brewed with Love at V&V Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    The rich scent of freshly brewed locally-sourced beans is enough...
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    14 days ago | Lapuz
+                    13 days ago | Jaro
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

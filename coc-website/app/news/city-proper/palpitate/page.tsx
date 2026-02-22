@@ -4,32 +4,33 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Palpitate Coffee Where the Rush Slows Down',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
+      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
+      { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
+      { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
+      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
-    author: 'Leigh Diane Mandado',
+    inlineImage: '/Palpitate/1.jpg',
+    inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
+    inlineImage2: '/Palpitate/2.jpg',
+    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
+    author: 'Kelley Marie Matoy ',
     date: 'January 31, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: 'Robinsons Iloilo, GF De Leon St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/17sJb7eTo2/',
+    content: `Located on the ground floor of Robinsons Iloilo, Palpitate Coffee may sound like it promises a rush but what it actually offers is a pause. Away from the busy pace of the mall, Palpitate Coffee welcomes mall-goers with a warm and inviting space offering a cozy break.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+Inside the café’s small space, photographs are displayed along the walls, telling stories that highlight the coffee origins and the people behind each harvest. These visuals connect the customers to the journey of every cup, making each drink more personal and meaningful. Instead of just simply serving coffee, they create an experience that brings customers closer to where the coffee comes from.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+Palpitate Coffee focuses on serving specialty coffee, known for its high quality and traceable origins. Each drink reflects careful sourcing and attention to detail, giving customers a chance to enjoy flavors that go beyond the usual brew. By featuring locally sourced beans and sharing the stories of farmers, the café helps build appreciation not only for the drink itself but also the community behind it.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+The cafe has become a favorite spot for students and young professionals who are looking for a comfortable place to study, meet friends, or simply take a break. Despite its location inside a mall, Palpitate maintains a calm and relaxed atmosphere that makes people want to stay a little longer.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+As Iloilo’s coffee culture continues to grow, Palpitate Coffee stands as a reminder that coffee is not only about energy, but also about connection. The café creates space for people to pause, reflect, and come together. And true to its name, Palpitate Coffee stirs the heart, but in the most comforting and quietly joyful way. 
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,15 +208,15 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Palpitate Coffee Where the Rush Slows Down
+                    Brewing stories at Iloilo Coffee Studio
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                     At the heart of Coffee Studio’s identity is its commitment to ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
+                    12 days ago | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -231,15 +232,15 @@ export default function ArticlePage() {
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Cozy Escape at Arias Burger and Coffee
+                    A Timeless Taste of Ilonggo Comfort
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    The rich scent of freshly brewed locally-sourced beans is enough...
+                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    14 days ago | Lapuz
+                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

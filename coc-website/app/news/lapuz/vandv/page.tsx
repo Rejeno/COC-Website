@@ -4,32 +4,32 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Home Brewed with Love at V&V Coffee',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/V&V/1.jpg', caption: ' Keeping it simple and local. Only at V&V coffee' },
+      { src: '/V&V/2.jpg', caption: ' Three ways to cool down. A cold Americano, a not too sweet caramel macchiato and a balanced hazelnut drink' },
+      { src: '/V&V/3.jpg', caption: ' Pour over, mixing with care, a cold cup of americano being made by the owner' },
+      { src: '/V&V/4.jpg', caption: ' The tools behind a flavorful brewed coffee' },
+      { src: '/V&V/5.JPG', caption: ' A warm and inviting spot that feels like a hidden gem in your neighborhood' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
+    inlineImage: '/V&V/1.jpg',
+    inlineImageCaption: ' Keeping it simple and local. Only at V&V coffee',
+    inlineImage2: '/V&V/5.jpg',
+    inlineImage2Caption: 'A warm and inviting spot that feels like a hidden gem in your neighborhood',
     author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    date: 'January 21, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: ' Zone 4, Alalasan, Lapuz, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/1AyUKEWrFS/',
+    content: `In every cup of coffee, there is a story. For some, it’s about comfort, and for others, it’s about livelihood. But for Merv Deocampo, the owner of V&V Coffee, it’s about transformation. What began as years as a barista, brewing coffee for others, eventually became his foundation for building a café of his own.  For six years, Merv worked as a barista. Those years were filled with long shifts, countless cups brewed with care, and lessons that shaped him into a senior specialist in the craft. Coffee became his comfort, his energy, and eventually, his happiness. With all the experience in hand and the full support of his family, he finally found the courage to take a leap of faith and build something of his own.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+    Beginning humbly at home, it slowly grew into the warm, homey space that V&V Coffee has today. Inspired by his grandparents, he named it after Vilma and Vilda, which carries a deep meaning and a love for his roots.  That sense of family is woven into the café’s atmosphere, a welcoming and cozy space filled with the kind of warmth that makes guests feel at home. Students often flock to the shop, finding it the perfect spot to relax after school. Its inviting vibe makes it a place where people gather, unwind, and feel a sense of belonging. The café serves a variety of drinks made from locally sourced beans, offering quality without sacrificing affordability. It’s a hidden gem for those who want to explore Iloilo’s growing coffee culture in a relaxed and approachable way.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+    But beyond the coffee, what truly sets V&V Coffee apart is its spirit of community. The friendly faces that will greet you while walking towards the shop, the warm interactions that fill the space, and Merv himself welcome every guest with kindness. Each visit becomes a meaningful experience, a reminder that coffee, at its best, is not all about a drink but can be a sense of connection.
+        	
+    From being a barista to owner, Merv’s story is an inspiring example that hard work and passion can be brewed into something extraordinary, and every cup carries not just a simple flavor but the journey of a man who dared to dream.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
-
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,15 +207,15 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Palpitate Coffee Where the Rush Slows Down
+                    Cozy Escape at Arias Burger and Coffee
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                    The rich scent of freshly brewed locally-sourced beans is enough...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
+                    14 days ago | Lapuz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -231,15 +231,15 @@ export default function ArticlePage() {
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
+                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Cozy Escape at Arias Burger and Coffee
+                    A Timeless Taste of Ilonggo Comfort
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    The rich scent of freshly brewed locally-sourced beans is enough...
+                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    14 days ago | Lapuz
+                    9 days ago | Molo
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

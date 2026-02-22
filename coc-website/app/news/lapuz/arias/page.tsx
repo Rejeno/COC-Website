@@ -4,32 +4,34 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Cozy Escape at Arias Burger and Coffee',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/ARIA_S/1.jpg', caption: 'Welcoming vibes from the moment you hit the wood wall of Aria\'s Burger and Coffee' },
+      { src: '/ARIA_S/2.jpg', caption: 'Escaping from the rush, a greenery spot perfect for unwinding with your favorite drink' },
+      { src: '/ARIA_S/3.jpg', caption: 'Behind the brew is the most satisfying part of the wait' },
+      { src: '/ARIA_S/4.jpg', caption: 'Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo' },
+      { src: '/ARIA_S/5.JPG', caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
+    inlineImage: '/ARIA_S/4.jpg',
+    inlineImageCaption: ' Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo',
+    inlineImage2: '/ARIA_S/5.jpg',
+    inlineImage2Caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer',
     author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    date: 'January 21, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: '  PH4Q+GHP Loboc, Lapuz, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/share/17xWyKmgo1/',
+    content: `Far from the rush of Iloilo’s busy streets, Arias Burger and Coffee offers a refreshing retreat where comfort food and café culture meet. It’s the kind of place that feels like pressing a pause button, welcoming their guests with burgers, freshly brewed coffee, and an atmosphere made for slowing down and savoring the moment.
+    
+    
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+    Part of the café’s charm lies in its thoughtfully designed space. Upstairs, guests can settle into a cozy spot surrounded by touches of greenery, with the soft sound of birds chirping nearby adding a hint of nature to the experience. It’s an ideal setting for quiet conversations, study sessions, or simply spending slow time alone. Downstairs, the café comes alive with gentle background music, the warm aroma of coffee filling the air as each cup is carefully prepared.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+    The rich scent of freshly brewed locally-sourced beans is enough to draw anyone in, while the flavors reflect the café’s commitment to quality. Pairing their drinks with Arias’ signature burgers makes for a satisfying experience, one that appeals to students, businesspeople, young professionals, and families alike. The menu strikes a balance between indulgence and comfort, offering food that feels familiar yet thoughtfully crafted.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+    What truly sets Arias Burger and Coffee apart is its ability to create a sense of escape. Beyond the food and drinks, it offers a welcoming space that values relaxation and presence. Every visit feels unhurried, as if the café invites you to stay just a little longer. Arias is perfect for those seeking both flavor and atmosphere, proving that the good cafés are often the ones that make you feel most at home.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,6 +209,18 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
+                <Link href="/news/lapuz/vandv" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Home Brewed with Love at V&V Coffee
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                     In every cup of coffee, there is a story. For some, it’s about comfort, and...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    13 days ago | Jaro
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
                 <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     Palpitate Coffee Where the Rush Slows Down
@@ -215,7 +229,7 @@ export default function ArticlePage() {
                     As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
+                    2 hrs ago | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
@@ -228,18 +242,6 @@ export default function ArticlePage() {
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     10 days ago | Jaro
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/lapuz/arias" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Cozy Escape at Arias Burger and Coffee
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    The rich scent of freshly brewed locally-sourced beans is enough...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    14 days ago | Lapuz
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

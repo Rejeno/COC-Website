@@ -4,32 +4,36 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Finding Comfort at Cafe Nahum',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/CAFE-NAHUM/1.jpg', caption: ' Chasing the shadows with the sun colors in a cold glass of latte' },
+      { src: '/CAFE-NAHUM/2.jpg', caption: 'The ultimate duo, a latte and a sweet sandwich beside it.' },
+      { src: '/CAFE-NAHUM/3.jpg', caption: 'Crafting the perfect swirl in a signature Nahum latte' },
+      { src: '/CAFE-NAHUM/4.jpg', caption: 'A warm , golden hour sanctuary somewhere in Jaro' },
+      { src: '/CAFE-NAHUM/5.JPG', caption: 'Appreciating the beauty of the flavors of local beans from your cup' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
+    inlineImage: '/CAFE-NAHUM/3.jpg',
+    inlineImageCaption: 'Crafting the perfect swirl in a signature Nahum latte',
+    inlineImage2: '/CAFE-NAHUM/4.jpg',
+    inlineImage2Caption: 'A warm, golden hour sanctuary somewhere in Jaro',
     author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    date: 'January 30, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: '18 Commission Civil St, Jaro, Iloilo City, 5000 Iloilo',
+    facebookLink: 'https://www.facebook.com/cafenahumans?mibextid=rS40aB7S9Ucbxw6v',
+    content: `Tucked along Commission Civil Street in Jaro, Iloilo, Cafe Nahum is more than just a coffee stop. It’s a space where comfort, creativity, and community come together. From the moment you step inside, the café welcomes you with a calm, homey atmosphere that invites you to slow down, take a little sip, and stay a little longer.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+Cafe Nahum takes pride in highlighting locally sourced coffee beans through its signature blend, offering customers a taste that is both familiar and thoughtfully crafted. Alongside classic coffee favorites, the menu also features matcha-based drinks and refreshing fruit teas, making it easy to find something whether you’re craving a strong caffeine kick or a lighter and more refreshing option.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+One of the café’s must-try drinks is the Nahum Latte, a creamy yet balanced cup that doesn’t overpower the boldness of the coffee. The milk adds just the right touch of sweetness, allowing the richness of the brew to shine through. Another drink to try is the Biscoff Coffee, where the distinct crunch and caramelized flavor of Biscoff create depth and texture that perfectly complement the coffee. Pair either drink with their brownies, crunchy on the outside, moist and chocolatey on the inside, for a simple but deeply satisfying treat.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+Beyond its beverages, Cafe Nahum offers a generous selection of food options. For those looking for something filling, they offer various rice meals such as their chicken pastil and silog meals. Lighter bites such as meaty nachos and sandwiches filled with Biscoff, Nutella, or egg are also available, making the café suitable for quick snacks or casual meals.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+What truly sets Cafe Nahum apart is its inviting ambiance. Designed with warm tones and accompanied by relaxing music, the space feels equally ideal for studying, working, or catching up with friends. Whether you’re seeking quiet focus or a place to unwind after a long day, the café adapts effortlessly to your mood.
+
+Cafe Nahum offers not only good food and well-crafted drinks, but they create a space where people can connect, reflect, and feel at ease. In a busy corner of Jaro, it stands as a gentle reminder to enjoy the moment and savor the simple joys of a good cup of coffee.
+
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,18 +211,6 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
-                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Palpitate Coffee Where the Rush Slows Down
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
                 <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     Brewing Passion at Yield Specialty Coffee
@@ -228,6 +220,18 @@ export default function ArticlePage() {
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     10 days ago | Jaro
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
+                <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    Palpitate Coffee Where the Rush Slows Down
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                    As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    2 hrs ago | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>

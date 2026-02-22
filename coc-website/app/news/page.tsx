@@ -109,14 +109,14 @@ function NewsContent() {
                     category="Jaro"
                     date="04 Feb"
                     imageUrl="/CAFE-NAHUM/4.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/jaro/cafe-nahum"
                   />
                   <ArticleCard
                     title="The Yield Specialty Coffee"
                     category="Jaro"
                     date="06 Feb"
                     imageUrl="/THE-YIELD/1.jpg"
-                    link="/news/city-proper/palpitate"
+                    link="/news/jaro/the-yield-specialty-coffee"
                   />
                 </>
               )}
@@ -149,7 +149,14 @@ function NewsContent() {
                     category="Molo"
                     date="04 Feb"
                     imageUrl="/Bruskoffee/4.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/molo/bruskoffee"
+                  />
+                  <ArticleCard
+                    title="Cafe Augusto"
+                    category="Molo"
+                    date="04 Feb"
+                    imageUrl="/CAugusto/4.jpg"
+                    link="/news/molo/cafe-augusto"
                   />
                 </>
               )}
@@ -162,14 +169,14 @@ function NewsContent() {
                     category="Lapuz"
                     date="04 Feb"
                     imageUrl="/V&V/4.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/lapuz/vandv"
                   />
                   <ArticleCard
                     title="Aria's Burger and Coffee"
                     category="Lapuz"
                     date="06 Feb"
                     imageUrl="/ARIA_S/3.jpg"
-                    link="/news/city-proper/palpitate"
+                    link="/news/lapuz/arias"
                   />
                 </>
               )}

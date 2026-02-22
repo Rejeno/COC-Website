@@ -4,32 +4,34 @@ import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if n
 
 export default function ArticlePage() {
   const article = {
-    title: 'Brewing stories at Iloilo Coffee Studio',
+    title: 'Coffee and Comfort in Your Neighborhood Brew',
     heroImages: [
-      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
-      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
-      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
-      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
-      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
+      { src: '/Bruskoffee/1.jpg', caption: 'Sweet, salted, and ice-cold cup as an afternoon refresher' },
+      { src: '/Bruskoffee/2.jpg', caption: 'Grab a coffee and strike a pose at Bruskoffee' },
+      { src: '/Bruskoffee/3.jpg', caption: 'Latte art in motion at Bruskoffee' },
+      { src: '/Bruskoffee/4.jpg', caption: 'Coffee in dark mode at Bruskoffee’s sleek, monochrome aesthetic' },
+      { src: '/Bruskoffee/5.JPG', caption: 'Sip and savor in this perfect Mocha pour' }
     ],
-    inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
-    inlineImage2: '/CStudio/3.jpg',
-    inlineImage2Caption: 'Vintage lenses and timeless memories.',
-    author: 'Leigh Diane Mandado',
-    date: 'January 31, 2026',
+    inlineImage: '/Bruskoffee/1.jpg',
+    inlineImageCaption: 'Sweet, salted, and ice-cold cup as an afternoon refresher',
+    inlineImage2: '/Bruskoffee/2.jpg',
+    inlineImage2Caption: 'Grab a coffee and strike a pose at Bruskoffee',
+    author: 'Kelley Marie Matoy ',
+    date: 'January 22, 2026',
     readTime: '5 mins read',
-    location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
-    facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
-    content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
+    location: '40 MH del Pilar St, Molo 5000 Iloilo City',
+    facebookLink: 'https://www.facebook.com/share/17xitM4hpr/',
+    content: `If you’re looking for a space where you can sink into your thoughts while sipping your favorite drink, Bruskoffee is just right for you. Just a short walk from several universities in Molo, Bruskoffee has become a familiar stop for students seeking both caffeine and calm. Located at 40 MH del Pilar Street, Molo, Iloilo City, this neighborhood café offers a quiet space where people can slow down, focus, and feel at ease.
 
-    The name itself hints at what awaits inside. Coffee Studio is not only a place to sip your favorite brew but it's a creative space where coffee, photography, music, and stories converge. Vintage cameras line the shelves, vinyl records spin their timeless tunes, and books add character to every corner. The café feels like a museum, a sanctuary, inviting guests to slow down and reconnect with the arts while enjoying a cup of locally sourced coffee.
+Starting  from a small setup in a home garage, Bruskoffee grew into what it is today through passion and curiosity about coffee. What began as simple experiments with a single coffee machine gradually developed into a full café built on consistency and care. The name “Bruskoffee” reflects a blunt approach to what truly matters - strong coffee, clean process, and a space that feels real. A brand that focuses on quality and consistency over trends.
 
-    At the heart of Coffee Studio's identity is its commitment to supporting local growers. By highlighting the roasting process and sourcing beans from nearby farms, the café strengthens Iloilo's coffee culture while giving farmers a platform to share their craft. Located near schools and universities, the café quickly became a favorite hangout for students, professionals, and families. Free internet, charging stations, and a welcoming atmosphere make it a practical space, but what keeps people coming back is the feeling it offers. 
+The café uses locally sourced coffee beans, blending Arabica and Robusta from Igbaras. They also collaborate with local coffee communities that support farmers, believing that these partnerships help strengthen the industry and contribute to the growth of Ilonggo coffee culture. More than just following the trends, Bruskoffee focuses on quality and creating drinks that customers can return to time and time again.
 
-    The cafe lets you step into nostalgia, surrounded by reminders of art, photography, and music. While waiting for your cup of coffee, the aroma of freshly brewed coffee mingles with the warmth of vinyl records you can scan at the shelves. You can also appreciate the collection of cameras that once captured moments and the quiet stories held by it. Every detail invites you to pause, reflect, and appreciate the beauty of both coffee and culture.
+The café has a minimalist design that creates a calming mood for the customers. Plain and dark-toned walls, soft jazz music, and uncluttered spaces make it an ideal place for studying, working, or simply enjoying quiet conversations. A comfortable place where customers can relax and savor bold and balanced coffee.
 
-    With its warm ambiance and the genuine smiles of its staff, Iloilo Coffee Studio is a perfect place for you to enjoy. Whether you're drawn by a love for the arts, culture, memory, or simply the comfort of a good cup of coffee, the space gently reminds you to slow down. Because, in a world that constantly rushes forward, Coffee Studio invites you to breathe, reflect, and appreciate the little things around you that often matter most.`,
+As a neighborhood café, Bruskoffee has witnessed many small but meaningful moments – from students preparing for their licensure examinations and eventually passing and becoming professionals to wedding celebrations and family gatherings. It is without doubt that Bruskoffee offers a welcoming spot where customers can linger. It has grown into a familiar and comforting space where conversations flow and everyday routines unfold.
+
+`,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
@@ -207,6 +209,18 @@ export default function ArticlePage() {
 
               <div className="space-y-8">
                 {/* Article Recommendation 1 */}
+                <Link href="/news/city-proper/coffee-studio" className="group block cursor-pointer">
+                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
+                    A Timeless Taste of Ilonggo Comfort
+                  </h3>
+                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
+                     True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
+                    9 days ago | Molo
+                  </p>
+                  <hr className="mt-5 border-t border-brand-dark/20" />
+                </Link>
                 <Link href="/news/city-proper/palpitate" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     Palpitate Coffee Where the Rush Slows Down
@@ -215,19 +229,7 @@ export default function ArticlePage() {
                     As Iloilo's coffee culture continues to grow, Palpitate Coffee stands ...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    8 days ago | City Proper
-                  </p>
-                  <hr className="mt-5 border-t border-brand-dark/20" />
-                </Link>
-                <Link href="/news/jaro/the-yield-specialty-coffee" className="group block cursor-pointer">
-                  <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    Brewing Passion at Yield Specialty Coffee
-                  </h3>
-                  <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                      Every great story begins with a spark. It can be a dream...
-                  </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    10 days ago | Jaro
+                    2 hrs ago | City Proper
                   </p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
