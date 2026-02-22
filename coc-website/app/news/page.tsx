@@ -180,16 +180,16 @@ function NewsContent() {
                   <ArticleCard
                     title="Madge Cafe"
                     category="La Paz"
-                    date="04 Feb"
+                    date="30 Jan"
                     imageUrl="/Madge/2.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/la-paz/madge-cafe/"
                   />
                   <ArticleCard
                     title="Paul Kaldi Coffee"
                     category="Lapaz"
-                    date="06 Feb"
+                    date="29 Jan"
                     imageUrl="/paul-kaldi/5.jpg"
-                    link="/news/city-proper/palpitate"
+                    link="/news/la-paz/paul-kaldi/"
                   />
                 </>
               )}
@@ -200,16 +200,16 @@ function NewsContent() {
                   <ArticleCard
                     title="3rd Gen Glory's Cafe"
                     category="Villa"
-                    date="04 Feb"
+                    date="22 Jan"
                     imageUrl="/3rd-gen/4.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/villa/glory/"
                   />
                   <ArticleCard
                     title="Iloilo Coffee House"
                     category="Villa"
-                    date="06 Feb"
+                    date="22 Jan"
                     imageUrl="/Iloilo-Coffee-House/5.jpg"
-                    link="/news/city-proper/palpitate"
+                    link="/news/villa/iloilo-coffee-house/"
                   />
                 </>
               )}
@@ -220,16 +220,16 @@ function NewsContent() {
                   <ArticleCard
                     title="Loco Local Coffee"
                     category="Mandurriao"
-                    date="04 Feb"
+                    date="30 Jan"
                     imageUrl="/Loco/3.jpg"
-                    link="/news/city-proper/coffee-studio"
+                    link="/news/mandurriao/LoCo/"
                   />
                   <ArticleCard
                     title="Kyo Coffee"
                     category="Mandurriao"
-                    date="06 Feb"
+                    date="01 Feb"
                     imageUrl="/Kyo/1.jpg"
-                    link="/news/city-proper/palpitate"
+                    link="/news/mandurriao/kyo-coffee/"
                   />
                 </>
               )}
