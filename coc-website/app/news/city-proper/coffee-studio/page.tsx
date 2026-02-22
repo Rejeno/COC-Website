@@ -6,21 +6,19 @@ export default function ArticlePage() {
   const article = {
     title: 'Brewing stories at Iloilo Coffee Studio',
     heroImages: [
-      '/CStudio/1.jpg',
-      '/CStudio/2.jpg',
-      '/CStudio/3.jpg',
-      '/CStudio/4.jpg',
-      '/CStudio/5.JPG'
+      { src: '/CStudio/1.jpg', caption: 'Precision in every pour.' },
+      { src: '/CStudio/2.jpg', caption: 'The heartbeat of the studio.' },
+      { src: '/CStudio/3.jpg', caption: 'Vintage lenses and timeless memories.' },
+      { src: '/CStudio/4.jpg', caption: 'A quiet corner and a studio blend coffee.' },
+      { src: '/CStudio/5.JPG', caption: 'The ultimate pairing of hazelnut and studio blend with garlic bread for a long afternoon.' }
     ],
     inlineImage: '/CStudio/4.jpg',
-    inlineImageCaption: 'The cozy interior of Iloilo Coffee Studio, where vintage cameras and vinyl records set the scene for a unique coffee experience.',
-    inlineImage2: '/CStudio/2.jpg',
-    inlineImage2Caption: 'Locally sourced beans take center stage at Coffee Studio, celebrating Iloilo\'s thriving coffee culture from farm to cup.',
+    inlineImageCaption: 'A quiet corner and a studio blend coffee.',
+    inlineImage2: '/CStudio/3.jpg',
+    inlineImage2Caption: 'Vintage lenses and timeless memories.',
     author: 'Leigh Diane Mandado',
-    role: 'Article Author',
-    avatar: '/Authors/leigh.jpg',
-    date: 'December 25, 2026',
-    readTime: '3 mins read',
+    date: 'January 31, 2026',
+    readTime: '5 mins read',
     location: 'RBG Building, 19 Jalandoni St, Iloilo City Proper, Iloilo City, 5000 Iloilo',
     facebookLink: 'https://www.facebook.com/share/1DjhDWuWma/',
     content: `Coffee has always been more than just a drink, it's a way of bringing people together. After working as a barista for other cafes, Russel Lujan opened his own cafe in March 2023, The Coffee Studio. Runs with his family, including his dad, Nereo Cajilig Lujan.
@@ -57,7 +55,7 @@ export default function ArticlePage() {
 
       {/* Hero Carousel Component */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-10">
-        <div className="w-full aspect-[4/3] lg:aspect-[21/9] overflow-hidden rounded-[38px]">
+        <div className="w-full">
            <HeroCarousel images={article.heroImages} title={article.title} />
         </div>
       </div>
@@ -95,15 +93,13 @@ export default function ArticlePage() {
 
       {/* Author Info */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-12">
-        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 lg:gap-12">
-          <div className="flex items-center lg:items-start gap-4 lg:gap-5">
-            <div className="h-[50px] w-[50px] lg:h-[76px] lg:w-[76px] rounded-full overflow-hidden flex-shrink-0">
-              <Image src={article.avatar} alt={article.author} width={76} height={76} className="h-full w-full object-cover" />
-            </div>
-            <div className="flex flex-col justify-center">
-              <p className="text-base lg:text-xl text-brand-light-gray">{article.author}</p>
-              <p className="text-lg lg:text-2xl font-semibold text-brand-dark">{article.role}</p>
-            </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
+          
+          {/* CHANGED: Removed italic, only underline the author's name */}
+          <div>
+            <p className="text-lg lg:text-xl font-medium text-brand-dark opacity-70">
+              by <span className="underline">{article.author}</span>
+            </p>
           </div>
 
           <div className="flex flex-wrap justify-start lg:justify-end items-center gap-6 lg:gap-8 text-brand-dark text-sm lg:text-base mt-2 lg:mt-0">
@@ -121,11 +117,6 @@ export default function ArticlePage() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Separator */}
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-6 lg:mt-10">
-        <div className="max-w-full lg:max-w-[820px] xl:max-w-[780px] border-b border-black" />
       </div>
 
       {/* Main Content Area */}
@@ -202,27 +193,6 @@ export default function ArticlePage() {
                <a href={article.facebookLink} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-80" aria-label="Follow on Facebook">
                  <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                 </svg>
-               </a>
-               {/* Instagram */}
-               <a href="#" className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-80" aria-label="Follow on Instagram">
-                 <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                 </svg>
-               </a>
-               {/* X (Twitter) */}
-               <a href="#" className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-80" aria-label="Follow on X">
-                 <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                 </svg>
-               </a>
-               {/* Threads */}
-               <a href="#" className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-80" aria-label="Follow on Threads">
-                 <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                    <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z" />
                  </svg>
                </a>
             </div>
