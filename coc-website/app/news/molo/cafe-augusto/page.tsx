@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/CAugusto/2.jpg', caption: 'Savory, fresh, and cold brewed perfect for an afternoon chill' },
       { src: '/CAugusto/3.jpg', caption: 'Café Augusto’s signature Brewed House Blend on ice!' },
       { src: '/CAugusto/4.jpg', caption: 'Crisp galletas paired with a hot fresh brew' },
-      { src: '/CAugusto/5.JPG', caption: ' Retro calls and coffee sketches in the house' }
+      { src: '/CAugusto/5.jpg', caption: ' Retro calls and coffee sketches in the house' }
     ],
     inlineImage: '/CAugusto/1.jpg',
     inlineImageCaption: 'Warm tone and good vibes at Café Augusto',

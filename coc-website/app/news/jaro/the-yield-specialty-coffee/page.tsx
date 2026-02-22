@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/THE-YIELD/2.jpg', caption: 'Warmth in a cup almost too pretty to drink' },
       { src: '/THE-YIELD/3.jpg', caption: 'A home away from home vibe that let\'s you pause a little' },
       { src: '/THE-YIELD/4.jpg', caption: 'Witnessing the care behind every cup' },
-      { src: '/THE-YIELD/5.JPG', caption: ' Proudly local, the true taste of Iloilo\'s coffee culture' }
+      { src: '/THE-YIELD/5.jpg', caption: ' Proudly local, the true taste of Iloilo\'s coffee culture' }
     ],
     inlineImage: '/THE-YIELD/5.jpg',
     inlineImageCaption: ' Proudly local, the true taste of Iloilo\'s coffee culture',

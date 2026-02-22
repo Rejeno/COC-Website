@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/Kyo/2.jpg', caption: 'A careful preparation of a hot brew, served fresh and steaming.' },
       { src: '/Kyo/3.jpg', caption: 'Bringing authentic Japanese style culture to the local coffee scene.' },
       { src: '/Kyo/4.jpg', caption: 'Reading through the ‘wall of love’ at Kyo Coffee.' },
-      { src: '/Kyo/5.JPG', caption: 'Kyo Coffee’s signature Iced Americano and a sweet treat to match.' }
+      { src: '/Kyo/5.jpg', caption: 'Kyo Coffee’s signature Iced Americano and a sweet treat to match.' }
     ],
     inlineImage: '/Kyo/1.jpg',
     inlineImageCaption: 'Afternoon hues at Kyo Coffee featuring the signature Americano and matcha-infused ‘Bonsai’ blend.',

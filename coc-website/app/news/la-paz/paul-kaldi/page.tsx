@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/paul-kaldi/2.jpg', caption: 'Freshly brewed Pink Salt Caramel Latte from Paul Kaldi.' },
       { src: '/paul-kaldi/3.jpg', caption: 'The sweet aroma of freshly brewed Arabica coffee beans.' },
       { src: '/paul-kaldi/4.jpg', caption: 'Behind the scenes at Paul Kaldi Coffee.' },
-      { src: '/paul-kaldi/5.JPG', caption: 'The Ube Cheese Crumble Muffin that goes better with it.' }
+      { src: '/paul-kaldi/5.jpg', caption: 'The Ube Cheese Crumble Muffin that goes better with it.' }
     ],
     inlineImage: '/paul-kaldi/1.jpg',
     inlineImageCaption: 'A caramel latte with a twist: a dash of Himalayan salt to balance the sweetness.',

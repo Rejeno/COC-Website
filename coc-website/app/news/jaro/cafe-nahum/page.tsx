@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/CAFE-NAHUM/2.jpg', caption: 'The ultimate duo, a latte and a sweet sandwich beside it.' },
       { src: '/CAFE-NAHUM/3.jpg', caption: 'Crafting the perfect swirl in a signature Nahum latte' },
       { src: '/CAFE-NAHUM/4.jpg', caption: 'A warm , golden hour sanctuary somewhere in Jaro' },
-      { src: '/CAFE-NAHUM/5.JPG', caption: 'Appreciating the beauty of the flavors of local beans from your cup' }
+      { src: '/CAFE-NAHUM/5.jpg', caption: 'Appreciating the beauty of the flavors of local beans from your cup' }
     ],
     inlineImage: '/CAFE-NAHUM/3.jpg',
     inlineImageCaption: 'Crafting the perfect swirl in a signature Nahum latte',

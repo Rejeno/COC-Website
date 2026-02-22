@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/V&V/2.jpg', caption: ' Three ways to cool down. A cold Americano, a not too sweet caramel macchiato and a balanced hazelnut drink' },
       { src: '/V&V/3.jpg', caption: ' Pour over, mixing with care, a cold cup of americano being made by the owner' },
       { src: '/V&V/4.jpg', caption: ' The tools behind a flavorful brewed coffee' },
-      { src: '/V&V/5.JPG', caption: ' A warm and inviting spot that feels like a hidden gem in your neighborhood' }
+      { src: '/V&V/5.jpg', caption: ' A warm and inviting spot that feels like a hidden gem in your neighborhood' }
     ],
     inlineImage: '/V&V/1.jpg',
     inlineImageCaption: ' Keeping it simple and local. Only at V&V coffee',

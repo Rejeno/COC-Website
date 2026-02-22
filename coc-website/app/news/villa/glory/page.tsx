@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/3rd-gen/2.jpg', caption: 'The third generation trademark of Glory’s Cafe.' },
       { src: '/3rd-gen/3.jpg', caption: 'Traditional coffee brews made with premium robusta coffee beans.' },
       { src: '/3rd-gen/4.jpg', caption: 'Lavish aesthetics and modernized interior, yet steeped in nostalgia and Ilonggo culture.' },
-      { src: '/3rd-gen/5.JPG', caption: 'The DIY coffee grinding corner.' }
+      { src: '/3rd-gen/5.jpg', caption: 'The DIY coffee grinding corner.' }
     ],
     inlineImage: '/3rd-gen/1.jpg',
     inlineImageCaption: 'A carefully crafted blend at 3rd Gen Glory’s Cafe',

@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/ARIA_S/2.jpg', caption: 'Escaping from the rush, a greenery spot perfect for unwinding with your favorite drink' },
       { src: '/ARIA_S/3.jpg', caption: 'Behind the brew is the most satisfying part of the wait' },
       { src: '/ARIA_S/4.jpg', caption: 'Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo' },
-      { src: '/ARIA_S/5.JPG', caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer' }
+      { src: '/ARIA_S/5.jpg', caption: 'Capturing the authentic local cold americano Aria\'s and Burger Coffee can offer' }
     ],
     inlineImage: '/ARIA_S/4.jpg',
     inlineImageCaption: ' Who says you have to choose? When you can have both their cold Americano and signature burger, a savory duo',

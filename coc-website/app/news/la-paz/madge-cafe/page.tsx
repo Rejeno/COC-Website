@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/Madge/2.jpg', caption: 'Hot and cold brews paired with the best tasting betchokoy.' },
       { src: '/Madge/3.jpg', caption: 'Personalized ceramic mugs for a personalized experience.' },
       { src: '/Madge/4.jpg', caption: 'Ice Coffee for a hot day.' },
-      { src: '/Madge/5.JPG', caption: 'A glimpse of Madge Cafe where every brew tells a story.' }
+      { src: '/Madge/5.jpg', caption: 'A glimpse of Madge Cafe where every brew tells a story.' }
     ],
     inlineImage: '/Madge/1.jpg',
     inlineImageCaption: 'Madge Cafe uses the Sock-Filter Brewing Method to preserve coffee’s traditional flavor profiles.',

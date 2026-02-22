@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
       { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
       { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.JPG', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Palpitate/5.jpg', caption: 'Cheering to the craft right where its story is told.' }
     ],
     inlineImage: '/Palpitate/1.jpg',
     inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',

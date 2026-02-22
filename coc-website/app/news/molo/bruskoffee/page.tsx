@@ -10,7 +10,7 @@ export default function ArticlePage() {
       { src: '/Bruskoffee/2.jpg', caption: 'Grab a coffee and strike a pose at Bruskoffee' },
       { src: '/Bruskoffee/3.jpg', caption: 'Latte art in motion at Bruskoffee' },
       { src: '/Bruskoffee/4.jpg', caption: 'Coffee in dark mode at Bruskoffee’s sleek, monochrome aesthetic' },
-      { src: '/Bruskoffee/5.JPG', caption: 'Sip and savor in this perfect Mocha pour' }
+      { src: '/Bruskoffee/5.jpg', caption: 'Sip and savor in this perfect Mocha pour' }
     ],
     inlineImage: '/Bruskoffee/1.jpg',
     inlineImageCaption: 'Sweet, salted, and ice-cold cup as an afternoon refresher',
@@ -214,7 +214,7 @@ As a neighborhood café, Bruskoffee has witnessed many small but meaningful mome
                     A Timeless Taste of Ilonggo Comfort
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                     True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
+                    True to its mission of preserving Ilonggo food heritage, Café Augusto highlights...
                   </p>
                   <p className="mt-3 text-xs text-brand-light-gray font-medium">
                     9 days ago | Molo
