@@ -16,10 +16,11 @@ export default function AboutPage() {
               Savor the Story Behind Every Cup
             </h1>
             <p className={`${montserrat.className} text-[#383838] mb-6 mt-5 md:mt-10 text-base md:text-lg text-justify`}>
-              Caffeinated Spaces is a website created by journalism students to explore and celebrate the evolving coffee culture in Iloilo City. From cozy cafés to bustling coffee spots, the site features local coffee shops, highlighting their unique stories, locally sourced beans, brewing techniques, ambience, service, and connection to the community.
+              Caffeinated Spaces is a website created by journalism students from West Visayas State University to explore and celebrate the evolving coffee culture in Iloilo City. From cozy cafés to bustling coffee spots, the site features local coffee shops, highlighting their unique stories, locally sourced beans, brewing techniques, ambience, service, and connection to the community.
             </p>
             <p className={`${montserrat.className} text-[#383838] mb-6 mt-5 md:mt-10 text-base md:text-lg text-justify`}>
               More than just a guide, Caffeinated Spaces aims to promote Iloilo’s coffee scene and inspire readers to support local cafés and coffee farmers. By sharing these stories, the website hopes to inform, engage, and encourage a deeper appreciation for the people and craft behind every cup of coffee in the city.
+
             </p>
           </div>
 
@@ -40,7 +41,7 @@ export default function AboutPage() {
         <div className={`${montserrat.className} flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-0`}>
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              65
+              14
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Visited Cafes
@@ -49,7 +50,7 @@ export default function AboutPage() {
 
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              15
+              14
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Coffee Blogs
@@ -76,7 +77,8 @@ export default function AboutPage() {
         </div>
 
         <p className={`${montserrat.className} text-xl lg:text-2xl font-medium leading-[146%] text-[#383838] text-center mt-16 lg:mt-24`}>
-          Our mission is to serve thoughtfully crafted coffee blogs while providing a welcoming space for meaningful conversation, reflection, and exchange of ideas. We envision a café that goes beyond routine — one that encourages curiosity, informed discussion, and genuine human connection, where every cup supports focus, dialogue, and a shared appreciation for quality and insight.
+          Our mission aims to document and promote the vibrant coffee culture of Iloilo City by sharing meaningful stories of local cafes and their craft behind every cup. We also seek to inform readers, highlight locally sourced products and brewing traditions, and encourage community support for locally grown coffee businesses. <br></br> <br></br>By showcasing the passion, creativity, and connection within Iloilo’s coffee scene, Caffeinated Spaces aspires to deepen appreciation for local coffee culture while strengthening the bond between cafes and the communities they serve.
+
         </p>
       </section>
 
