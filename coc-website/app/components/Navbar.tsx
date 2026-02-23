@@ -71,7 +71,7 @@ export default function Navbar({ fontClass }: NavbarProps) {
         <div className="flex items-center gap-4 z-20">
           {/* Facebook Icon (Visible on Desktop) */}
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61587123767644"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block text-brand-dark hover:opacity-80 transition-opacity"
@@ -114,7 +114,7 @@ export default function Navbar({ fontClass }: NavbarProps) {
             </Link>
           ))}
           <div className="h-px bg-gray-200 w-full my-2"></div>
-           <a href="https://facebook.com" className="flex items-center gap-2 text-gray-800 font-medium">
+           <a href="https://www.facebook.com/profile.php?id=61587123767644" className="flex items-center gap-2 text-gray-800 font-medium">
              <span>Visit us on Facebook</span>
            </a>
         </div>
