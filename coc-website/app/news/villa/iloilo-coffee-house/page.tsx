@@ -1,8 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if needed
 
 export default function ArticlePage() {
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+
   const article = {
     title: 'Symphony of Flavors, Crafted in Iloilo Coffee House',
     heroImages: [
@@ -23,21 +28,50 @@ export default function ArticlePage() {
     facebookLink: 'https://www.facebook.com/share/17hwummytT/',
     content: `Like a well-composed symphony, coffee is all about balance. Crafted with the right sugar levels, milk blends and roast profiles to not compromise its intended flavor – and Iloilo Coffee House orchestrates a symphony of flavors in every cup they serve. 
 
-In the quiet neighborhood of Villa, one can never miss its distinct church-like exterior and the alfresco seating beneath the shade of the trees, creating a beachside vibe. Beyond its doors, the warm, cozy and vintage-inspired interior design blends simple minimalism with a nostalgic charm, creating a space that is uncluttered yet full of character. The walls are painted mostly white to give the spotlight to the cafe’s standout features: a collection of vintage cameras, old coffee tools and vintage espresso machines. These are carefully displayed on the shelves, sparking curiosity and admiration among coffee lovers and walk-in customers. 
+In the quiet neighborhood of Villa, one can never miss its distinct church-like exterior and the alfresco seating beneath the shade of the trees, creating a beachside vibe. Beyond its doors, the warm, cozy and vintage-inspired interior design blends simple minimalism with a nostalgic charm, creating a space that is uncluttered yet full of character. The walls are painted mostly white to give the spotlight to the cafe's standout features: a collection of vintage cameras, old coffee tools and vintage espresso machines. These are carefully displayed on the shelves, sparking curiosity and admiration among coffee lovers and walk-in customers. 
 
 Since its opening in 2017, this cozy cafe has been crafting each cup with care. On the menu, they have Basic Black which is one of their signature cold brews. The brew carries strong, earthy notes that are rich and unapologetically bold – enough to awaken the senses all throughout the day. On the other hand, the Sweetened Hazelnut Latte has a balanced coffee blend. Smooth and creamy, gentle sweetness, and a rich espresso finish – for those who prefer light flavors over strong and bold profiles. 
 
-From robust espressos and cold brews to signature lattes and refreshing fruit teas, every drink is meticulously made with passion and dedication which truly instills the cafe’s philosophy, “Crafting Liquid Poetry, One Cup at a Time”. So whether you’re a coffee aficionado yearning for the perfect brew, an artist looking for inspiration, or simply someone who enjoys a quiet corner with a great cup of coffee, Iloilo Coffee House delivers on every front. This must-visit destination is a haven for the senses, a celebration for coffee craft, and a warm space that keeps the community coming back for more. 
+From robust espressos and cold brews to signature lattes and refreshing fruit teas, every drink is meticulously made with passion and dedication which truly instills the cafe's philosophy, "Crafting Liquid Poetry, One Cup at a Time". So whether you're a coffee aficionado yearning for the perfect brew, an artist looking for inspiration, or simply someone who enjoys a quiet corner with a great cup of coffee, Iloilo Coffee House delivers on every front. This must-visit destination is a haven for the senses, a celebration for coffee craft, and a warm space that keeps the community coming back for more. 
 `,
   };
 
   const paragraphs = article.content.split('\n\n').filter(Boolean);
-
-  // Index at which to show the second inline image (left-floated, bottom section)
   const secondInlineIndex = paragraphs.length - 1;
 
   return (
     <article className="min-h-screen bg-white">
+
+      {/* ── Lightbox Overlay ── */}
+      {lightboxSrc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75"
+          onClick={() => setLightboxSrc(null)}
+        >
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setLightboxSrc(null)}
+              className="absolute -top-4 -right-4 z-50 flex h-8 w-8 items-center justify-center rounded-full bg-white text-black shadow-lg hover:bg-gray-100 transition"
+              aria-label="Close"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <img
+              src={lightboxSrc}
+              alt="Full size view"
+              style={{ maxWidth: '60vw', maxHeight: '70vh', width: 'auto', height: 'auto' }}
+              className="rounded-2xl shadow-2xl block"
+            />
+          </div>
+        </div>
+      )}
+
       {/* Back to news link */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] pt-6 lg:pt-10">
         <Link
@@ -62,19 +96,15 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
       {/* Title + CTA */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-16">
         <div className="flex flex-row flex-wrap lg:flex-nowrap items-start justify-between gap-4 lg:gap-0">
-          
           <div className="flex-1 max-w-[85%] lg:max-w-[880px]">
             <h1 className="text-3xl sm:text-5xl lg:text-[64px] font-semibold leading-tight lg:leading-[78px] text-brand-brown">
               {article.title}
             </h1>
           </div>
-
-          {/* Social Icon Section */}
           <div className="flex flex-col items-end lg:items-end gap-3 mt-1 lg:mt-4 shrink-0">
             <p className="hidden lg:block text-xl font-semibold text-brand-gray">
               Follow our Facebook Page
             </p>
-            
             <a 
               href={article.facebookLink}
               target="_blank"
@@ -93,14 +123,11 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
       {/* Author Info */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] mt-8 lg:mt-12">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-12">
-          
-          {/* CHANGED: Removed italic, only underline the author's name */}
           <div>
             <p className="text-lg lg:text-xl font-medium text-brand-dark opacity-70">
               by <span className="underline">{article.author}</span>
             </p>
           </div>
-
           <div className="flex flex-wrap justify-start lg:justify-end items-center gap-6 lg:gap-8 text-brand-dark text-sm lg:text-base mt-2 lg:mt-0">
             <div className="flex items-center gap-2">
               <svg className="h-4 w-4 lg:h-5 lg:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -127,34 +154,56 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
             <div className="flex-grow">
               {paragraphs.map((para, i) => (
                 <div key={i}>
-                  {/* FIRST INLINE IMAGE — floats right, after paragraph index 1 */}
+                  {/* FIRST INLINE IMAGE */}
                   {i === 1 && (
                     <figure className="mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:float-right">
-                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
-                        <Image 
-                          src={article.inlineImage}
-                          alt="Inline content image"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
+                      <button
+                        onClick={() => setLightboxSrc(article.inlineImage)}
+                        className="block w-full text-left group focus:outline-none cursor-zoom-in"
+                        aria-label="View full image"
+                      >
+                        <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                          <Image 
+                            src={article.inlineImage}
+                            alt="Inline content image"
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/25 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0zM11 8v6M8 11h6" />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
                       <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
                         {article.inlineImageCaption}
                       </figcaption>
                     </figure>
                   )}
 
-                  {/* SECOND INLINE IMAGE — floats left, before last paragraph */}
+                  {/* SECOND INLINE IMAGE */}
                   {i === secondInlineIndex && (
                     <figure className="mb-6 lg:mb-4 lg:mr-8 lg:w-[45%] lg:float-left">
-                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
-                        <Image 
-                          src={article.inlineImage2}
-                          alt="Second inline content image"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
+                      <button
+                        onClick={() => setLightboxSrc(article.inlineImage2)}
+                        className="block w-full text-left group focus:outline-none cursor-zoom-in"
+                        aria-label="View full image"
+                      >
+                        <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                          <Image 
+                            src={article.inlineImage2}
+                            alt="Second inline content image"
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/25 transition-colors duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0zM11 8v6M8 11h6" />
+                            </svg>
+                          </div>
+                        </div>
+                      </button>
                       <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
                         {article.inlineImage2Caption}
                       </figcaption>
@@ -188,7 +237,6 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
 
             {/* Social Media Links */}
             <div className="mt-8 flex gap-4">
-               {/* Facebook */}
                <a href={article.facebookLink} target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-[6px] bg-brand-brown text-white transition hover:bg-opacity-80" aria-label="Follow on Facebook">
                  <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
@@ -203,22 +251,17 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
               <div className="rounded-md bg-accent-brown py-3.5 text-center text-base font-semibold text-white uppercase">
                 More Articles Here
               </div>
-
               <div className="space-y-8">
-                {/* Article Recommendation 1 */}
                 <Link href="/news/villa/glory/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
-                    The Living Legacy of 3rd Gen Glory’s Cafe
+                    The Living Legacy of 3rd Gen Glory's Cafe
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
                     Change drifts steadily within the silent stream of time. It moves ...
                   </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    Jan 22 | Villa
-                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">Jan 22 | Villa</p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                 {/* Article Recommendation 2 */}
                 <Link href="/news/lapaz/Madge/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     Traditional Taste Crafted Through Decades of Passion
@@ -226,22 +269,17 @@ From robust espressos and cold brews to signature lattes and refreshing fruit te
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
                     Caught in a chaotic loop where people crave for a faster pace of life ...
                   </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    Jan 30 | La Paz
-                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">Jan 30 | La Paz</p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
-                 {/* Article Recommendation 3 */}
                 <Link href="/news/mandurriao/LoCo/" className="group block cursor-pointer">
                   <h3 className="font-semibold text-lg leading-tight text-black group-hover:text-brand-green line-clamp-2 transition-colors">
                     LoCo Coffee and Its Brewing Local Pride
                   </h3>
                   <p className="mt-2 text-sm text-brand-gray line-clamp-2">
-                    LoCo Coffee, short for “Local Coffee,” serves as a modern bridge ...
+                    LoCo Coffee, short for "Local Coffee," serves as a modern bridge ...
                   </p>
-                  <p className="mt-3 text-xs text-brand-light-gray font-medium">
-                    Jan 30| Mandurriao
-                  </p>
+                  <p className="mt-3 text-xs text-brand-light-gray font-medium">Jan 30 | Mandurriao</p>
                   <hr className="mt-5 border-t border-brand-dark/20" />
                 </Link>
               </div>
