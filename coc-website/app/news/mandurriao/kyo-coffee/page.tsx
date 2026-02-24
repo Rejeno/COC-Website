@@ -1,8 +1,11 @@
+'use client'
 import Image from 'next/image';
+import { useState } from 'react';
 import Link from 'next/link';
 import HeroCarousel from '../../../components/HeroCarousel'; // Adjust path if needed
 
 export default function ArticlePage() {
+  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
   const article = {
     title: 'Kyo Coffee and Its Brewing Local Pride',
     heroImages: [
@@ -40,6 +43,35 @@ Kyo Coffee welcomes students, professionals, and families alike, offering not ju
 
   return (
     <article className="min-h-screen bg-white">
+      {/* ── Lightbox Overlay ── */}
+      {lightboxSrc && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75"
+          onClick={() => setLightboxSrc(null)}
+        >
+          <div
+            className="relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setLightboxSrc(null)}
+              className="absolute -top-4 -right-4 z-50 flex h-8 w-8 items-center justify-center rounded-full bg-white text-black shadow-lg hover:bg-gray-100 transition"
+              aria-label="Close"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <img
+              src={lightboxSrc}
+              alt="Full size view"
+              style={{ maxWidth: '60vw', maxHeight: '70vh', width: 'auto', height: 'auto' }}
+              className="rounded-2xl shadow-2xl block"
+            />
+          </div>
+        </div>
+      )}
       {/* Back to news link */}
       <div className="mx-auto max-w-[1440px] px-6 lg:px-[58px] pt-6 lg:pt-10">
         <Link
@@ -129,39 +161,60 @@ Kyo Coffee welcomes students, professionals, and families alike, offering not ju
             <div className="flex-grow">
               {paragraphs.map((para, i) => (
                 <div key={i}>
-                  {/* FIRST INLINE IMAGE — floats right, after paragraph index 1 */}
                   {i === 1 && (
-                    <figure className="mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:float-right">
-                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
-                        <Image 
-                          src={article.inlineImage}
-                          alt="Inline content image"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
-                        {article.inlineImageCaption}
-                      </figcaption>
-                    </figure>
-                  )}
-
-                  {/* SECOND INLINE IMAGE — floats left, before last paragraph */}
-                  {i === secondInlineIndex && (
-                    <figure className="mb-6 lg:mb-4 lg:mr-8 lg:w-[45%] lg:float-left">
-                      <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
-                        <Image 
-                          src={article.inlineImage2}
-                          alt="Second inline content image"
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
-                        {article.inlineImage2Caption}
-                      </figcaption>
-                    </figure>
-                  )}
+                        <figure className="mb-6 lg:mb-4 lg:ml-8 lg:w-[45%] lg:float-right">
+                          <button
+                            onClick={() => setLightboxSrc(article.inlineImage)}
+                            className="block w-full text-left group focus:outline-none cursor-zoom-in"
+                            aria-label="View full image"
+                          >
+                            <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                              <Image 
+                                src={article.inlineImage}
+                                alt="Inline content image"
+                                fill
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/25 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0zM11 8v6M8 11h6" />
+                                </svg>
+                              </div>
+                            </div>
+                          </button>
+                          <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
+                            {article.inlineImageCaption}
+                          </figcaption>
+                        </figure>
+                      )}
+    
+                      {/* SECOND INLINE IMAGE */}
+                      {i === secondInlineIndex && (
+                        <figure className="mb-6 lg:mb-4 lg:mr-8 lg:w-[45%] lg:float-left">
+                          <button
+                            onClick={() => setLightboxSrc(article.inlineImage2)}
+                            className="block w-full text-left group focus:outline-none cursor-zoom-in"
+                            aria-label="View full image"
+                          >
+                            <div className="relative w-full h-[250px] lg:h-[350px] rounded-2xl overflow-hidden">
+                              <Image 
+                                src={article.inlineImage2}
+                                alt="Second inline content image"
+                                fill
+                                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                              <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/25 transition-colors duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0zM11 8v6M8 11h6" />
+                                </svg>
+                              </div>
+                            </div>
+                          </button>
+                          <figcaption className="mt-2 text-[15px] text-brand-gray opacity-70 italic text-center px-1">
+                            {article.inlineImage2Caption}
+                          </figcaption>
+                        </figure>
+                      )}
                   
                   <p className="mb-6 text-base lg:text-lg leading-relaxed text-justify tracking-wide">
                     {para.trim()}
