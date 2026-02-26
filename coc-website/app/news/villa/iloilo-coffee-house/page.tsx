@@ -13,8 +13,8 @@ export default function ArticlePage() {
     heroImages: [
       { src: '/Iloilo-Coffee-House/1.jpg', caption: 'Two coffee blends are better than one.' },
       { src: '/Iloilo-Coffee-House/2.jpg', caption: 'Sip and relax at Iloilo Coffee House ' },
-      { src: '/Iloilo-Coffee-House/3.jpg', caption: ' A nice bask beneath the bright, morning sun. ' },
-      { src: '/Iloilo-Coffee-House/4.jpg', caption: 'The Sweet Hazelnut Latte for a beautiful day.' },
+      { src: '/Iloilo-Coffee-House/3.jpg', caption: 'The Sweet Hazelnut Latte for a beautiful day. ' },
+      { src: '/Iloilo-Coffee-House/4.jpg', caption: 'A nice bask beneath the bright, morning sun.' },
       { src: '/Iloilo-Coffee-House/5.jpg', caption: 'The basic black, the hazelnut latte and the green matcha with their potato wedges.' }
     ],
     inlineImage: '/Iloilo-Coffee-House/1.jpg',

@@ -23,7 +23,7 @@ export default function ArticlePage() {
     date: 'January 22, 2026',
     readTime: '5 mins read',
     location: '40 MH del Pilar St, Molo 5000 Iloilo City',
-    facebookLink: 'https://www.facebook.com/share/17xitM4hpr/',
+    facebookLink: 'https://www.facebook.com/share/17qttM7PFF/',
     content: `If you’re looking for a space where you can sink into your thoughts while sipping your favorite drink, Bruskoffee is just right for you. Just a short walk from several universities in Molo, Bruskoffee has become a familiar stop for students seeking both caffeine and calm. Located at 40 MH del Pilar Street, Molo, Iloilo City, this neighborhood café offers a quiet space where people can slow down, focus, and feel at ease.
 
 Starting  from a small setup in a home garage, Bruskoffee grew into what it is today through passion and curiosity about coffee. What began as simple experiments with a single coffee machine gradually developed into a full café built on consistency and care. The name “Bruskoffee” reflects a blunt approach to what truly matters - strong coffee, clean process, and a space that feels real. A brand that focuses on quality and consistency over trends.
