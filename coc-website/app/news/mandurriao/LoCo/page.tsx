@@ -11,7 +11,7 @@ export default function ArticlePage() {
     heroImages: [
       { src: '/Loco/1.jpg', caption: 'Enjoying a warm brew in the signature LoCo mug.' },
       { src: '/Loco/2.jpg', caption: 'The art of the hand-brewed coffee at LoCo.' },
-      { src: '/Loco/3.jpg', caption: 'TA warm glow in the evening at Local Coffee (LoCo).' },
+      { src: '/Loco/3.jpg', caption: 'A warm glow in the evening at Local Coffee (LoCo).' },
       { src: '/Loco/4.jpg', caption: 'Creamy perfection in this Iced Creme Brulee Latte.' },
       { src: '/Loco/5.jpg', caption: 'There distinct ways to enjoy a great cup of coffee at Local Coffee (LoCo).' }
     ],
