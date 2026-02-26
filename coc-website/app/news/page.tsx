@@ -17,21 +17,47 @@ const CATEGORIES = [
   "Mandurriao",
 ];
 
-const SIDEBAR_POSTS = [
+// CHANGED: Created a specific array for the "Featured" section
+const FEATURED_POSTS = [
   {
-    title: "Top Hidden Gems: Top Cafes in Iloilo City Districts.",
-    date: "February 04, 2026",
-    image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=200",
+    title: "Brewing stories at Iloilo Coffee Studio",
+    date: "January 31, 2026",
+    image: "/CStudio/4.jpg",
+    link: "/news/city-proper/coffee-studio",
   },
   {
-    title: "The Ultimate Guide to Iloilo Coffee Crawl.",
-    date: "February 10, 2026",
-    image: "https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&q=80&w=200",
+    title: "Your Taste at Heart Creates a Lasting Impact",
+    date: "January 31, 2026",
+    image: "/paul-kaldi/2.jpg",
+    link: "/news/la-paz/paul-kaldi/",
   },
   {
-    title: "Barista's Choice: Best Beans in Town.",
-    date: "February 12, 2026",
-    image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=200",
+    title: "The Living Legacy of 3rd Gen Glory’s Cafe",
+    date: "January 22, 2026",
+    image: "/3rd-gen/2.jpg",
+    link: "/news/la-paz/madge-cafe/",
+  },
+];
+
+// CHANGED: Created a specific array for the "Districts" section
+const DISTRICTS_POSTS = [
+  {
+    title: "Aria's Burger and Coffee",
+    date: "February 06, 2026",
+    image: "/ARIA_S/3.jpg",
+    link: "/news/lapuz/arias",
+  },
+  {
+    title: "Palpitate Coffee Where the Rush Slows Down",
+    date: "February 06, 2026",
+    image: "/Palpitate/1.jpg",
+    link: "/news/city-proper/palpitate",
+  },
+  {
+    title: "The Yield Specialty Coffee",
+    date: "February 06, 2026",
+    image: "/THE-YIELD/1.jpg",
+    link: "/news/jaro/the-yield-specialty-coffee",
   },
 ];
 
@@ -245,9 +271,10 @@ function NewsContent() {
           </div>
 
           {/* Sidebar */}
+          {/* CHANGED: Passing different arrays to each section */}
           <aside className="lg:col-span-1 space-y-12">
-            <SidebarSection title="Featured" items={SIDEBAR_POSTS} />
-            <SidebarSection title="Districts" items={SIDEBAR_POSTS} />
+            <SidebarSection title="Featured" items={FEATURED_POSTS} />
+            <SidebarSection title="Districts" items={DISTRICTS_POSTS} />
           </aside>
         </div>
       </main>
@@ -307,11 +334,11 @@ function SidebarSection({ title, items }: { title: string; items: any[] }) {
       </div>
       <div className="flex flex-col gap-6">
         {items.map((item, index) => (
-          <div key={`${title}-${index}`} className="flex gap-4 group cursor-pointer">
+          <Link href={item.link || "#"} key={`${title}-${index}`} className="flex gap-4 group cursor-pointer block">
             <div className="w-20 h-20 shrink-0 rounded-2xl overflow-hidden">
               <img
                 src={item.image}
-                alt=""
+                alt={item.title}
                 className="w-full h-full object-cover transition-transform group-hover:scale-110"
               />
             </div>
@@ -321,7 +348,7 @@ function SidebarSection({ title, items }: { title: string; items: any[] }) {
                 {item.title}
               </h4>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
