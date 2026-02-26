@@ -82,9 +82,8 @@ export default function RootLayout({
                     Caffeinated Spaces is a website created by journalism students from West Visayas State University to explore and celebrate the evolving coffee culture in Iloilo City.
                   </p>
 
-                  {/* CHANGED: Facebook & QR Code in one flex row */}
-                  {/* Added ml-4 md:ml-8 to push the QR code more towards the center */}
-                  <div className="flex flex-row items-center gap-8 ml-4 md:ml-8 lg:ml-1 mt-2">
+                  {/* Facebook & QR Code */}
+                  <div className="flex flex-row items-center gap-16 md:gap-24 mt-2">
                     
                     {/* Facebook Icon */}
                     <a href="https://www.facebook.com/profile.php?id=61587123767644" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#6D7E5E] transition-colors">
@@ -134,18 +133,22 @@ export default function RootLayout({
                       Iloilo Districts
                     </h3>
                     <ul className="space-y-3 text-xs md:text-sm opacity-90 font-normal">
+                      {/* CHANGED: Converted to objects with filterName and updated Link logic */}
                       {[
-                        "District of Iloilo City",
-                        "District of Jaro",
-                        "District of Molo",
-                        "District of Mandurriao",
-                        "District of Villa",
-                        "District of Lapuz",
-                        "District of La Paz",
+                        { name: "District of Iloilo City", filterName: "Iloilo City" },
+                        { name: "District of Jaro", filterName: "Jaro" },
+                        { name: "District of Molo", filterName: "Molo" },
+                        { name: "District of Mandurriao", filterName: "Mandurriao" },
+                        { name: "District of Villa", filterName: "Villa" },
+                        { name: "District of Lapuz", filterName: "Lapuz" },
+                        { name: "District of La Paz", filterName: "La Paz" },
                       ].map((district) => (
-                        <li key={district}>
-                          <Link href="#" className="hover:text-[#6D7E5E] transition-colors uppercase block">
-                            {district}
+                        <li key={district.filterName}>
+                          <Link 
+                            href={`/news?district=${encodeURIComponent(district.filterName)}`} 
+                            className="hover:text-[#6D7E5E] transition-colors uppercase block"
+                          >
+                            {district.name}
                           </Link>
                         </li>
                       ))}
