@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className={`${montserrat.className} flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-0`}>
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              13
+              14
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Visited Cafes
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
           <div className="text-center">
             <p className="text-5xl sm:text-6xl lg:text-[64px] font-semibold leading-tight text-accent-brown">
-              13
+              14
             </p>
             <p className="mt-3 text-base md:text-xl font-medium text-brand-dark">
               Coffee Blogs
