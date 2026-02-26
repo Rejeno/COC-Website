@@ -10,15 +10,15 @@ export default function ArticlePage() {
     title: 'Palpitate Coffee Where the Rush Slows Down',
     heroImages: [
       { src: '/Palpitate/1.jpg', caption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.' },
-      { src: '/Palpitate/2.jpg', caption: ' Precision brewing in action at Palpitate Coffee' },
+      { src: '/Palpitate/2.jpg', caption: ' Cheering to the craft right where its story is told.' },
       { src: '/Palpitate/3.jpg', caption: ' Iced signature house blend paired with the café’s witty motto.' },
       { src: '/Palpitate/4.jpg', caption: 'The perfect workspace companion in the city.' },
-      { src: '/Palpitate/5.jpg', caption: 'Cheering to the craft right where its story is told.' }
+      { src: '/Palpitate/5.jpg', caption: 'Precision brewing in action at Palpitate Coffee.' }
     ],
     inlineImage: '/Palpitate/1.jpg',
     inlineImageCaption: 'The gallery wall at Palpitate Coffee offering guests a visual narration of their journey from bean to cup.',
     inlineImage2: '/Palpitate/2.jpg',
-    inlineImage2Caption: 'Precision brewing in action at Palpitate Coffee',
+    inlineImage2Caption: 'Cheering to the craft right where its story is told.',
     author: 'Kelley Marie Matoy ',
     date: 'January 31, 2026',
     readTime: '5 mins read',
